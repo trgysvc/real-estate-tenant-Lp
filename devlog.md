@@ -19,6 +19,7 @@ Tüm yasal ve ürün sayfalarının rotaları, global standartlara uygun olacak 
 
 ### 2. Özellik Detay Modalları ve Derin Linkleme (Deep Linking)
 kullanıcıların sayfayı terk etmeden detaylı bilgi alabilmesi için gelişmiş bir modal yapısı kuruldu.
+-   **Kullanıcı Deneyimi:** "Özellikler" linki artık ana sayfada ilgili bölüme kaydırıyor (Scroll).
 -   **Dinamik İçerik:** Her özellik kartı (High Speed Search, AI Assistant vb.), tıklandığında kendine özel içeriği (`title`, `description`, `tech stack`) modal içinde açıyor.
 -   **URL Parametreleri:** Modallar açıldığında URL güncelleniyor (örn: `/features?item=ai-assistant`). Bu sayede kullanıcılar belirli bir özelliğin direkt linkini paylaşabiliyor.
 -   **Teknik Detay:** `FeatureDetailModal.tsx` bileşeni oluşturuldu ve `BentoGrid` ile entegre edildi.
@@ -38,6 +39,7 @@ kullanıcıların sayfayı terk etmeden detaylı bilgi alabilmesi için gelişmi
 ---
 
 ## 📦 Teknik Notlar
+-   **Build İyileştirmesi:** `middleware.ts` dosyası, Next.js 16+ konvansiyonuna uygun olarak `proxy.ts` olarak yeniden adlandırıldı ve deprecation uyarısı giderildi.
 -   **Build Durumu:** `npm run build` hatasız tamamlandı.
 -   **Deploy:** Kodlar `main` branch'ine başarıyla push edildi.
 -   **Performans:** Lighthouse ve yerel testlerde (dev modu) rotaların ve modalların performansı doğrulandı.
