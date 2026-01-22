@@ -10,7 +10,10 @@ const MOCK_RESULTS = [
     { id: 3, title: "Deniz Manzaralı Malikane", price: "4.200.000 TL", location: "Miami" },
 ];
 
+import { useTranslations } from 'next-intl';
+
 export const Hero = () => {
+    const t = useTranslations('Hero');
     const [searchTerm, setSearchTerm] = useState("");
     const [showResults, setShowResults] = useState(false);
 
@@ -27,14 +30,14 @@ export const Hero = () => {
                 >
                     <span className="px-4 py-1.5 rounded-full border border-primary/20 bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-6 inline-block">
                         <Sparkles className="w-3 h-3 inline-block mr-2 -mt-0.5" />
-                        Yeni Nesil Gayrimenkul İşletim Sistemi
+                        {t('badge')}
                     </span>
                     <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]">
-                        Modern Gayrimenkul İçin <br />
-                        <span className="text-gradient">Yapay Zeka Destekli</span> İşletim Sistemi
+                        {t('title.main')} <br />
+                        <span className="text-gradient">{t('title.highlight')}</span> {t('title.suffix')}
                     </h1>
                     <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                        Hız, güvenlik ve yapay zeka bir arada. CRM, İlan Yönetimi ve Müşteri İlişkilerini tek bir platformda toplayan, teknik olarak kusursuz bir deneyim.
+                        {t('description')}
                     </p>
                 </motion.div>
 
@@ -50,7 +53,7 @@ export const Hero = () => {
                             <Search className="text-slate-500 group-focus-within:text-primary transition-colors" size={20} />
                             <input
                                 type="text"
-                                placeholder="Lüks villa, modern ofis, arsa..."
+                                placeholder={t('search.placeholder')}
                                 className="bg-transparent border-none outline-none w-full text-white placeholder:text-slate-600"
                                 value={searchTerm}
                                 onChange={(e) => {
@@ -60,8 +63,8 @@ export const Hero = () => {
                                 onFocus={() => searchTerm.length > 0 && setShowResults(true)}
                             />
                             <div className="flex items-center gap-2">
-                                <span className="text-[10px] font-bold px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">TYPESENSE</span>
-                                <span className="text-[10px] font-medium text-primary animate-pulse">0.2ms</span>
+                                <span className="text-[10px] font-bold px-1.5 py-0.5 rounded border border-slate-700 text-slate-500">{t('search.badge')}</span>
+                                <span className="text-[10px] font-medium text-primary animate-pulse">{t('search.latency')}</span>
                             </div>
                         </div>
 

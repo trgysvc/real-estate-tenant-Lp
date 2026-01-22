@@ -4,6 +4,7 @@ import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import { CookieConsent } from '@/components/CookieConsent';
 import { ModalProvider } from '@/providers/ModalProvider';
+import { FeatureDetailModal } from '@/components/modals/FeatureDetailModal';
 import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -22,7 +23,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const t = await getTranslations({ locale, namespace: 'HomePage' });
 
     return {
-        title: t('title')
+        title: t('title'),
+        icons: {
+            icon: '/favicon.ico',
+            shortcut: '/favicon-16x16.png',
+            apple: '/apple-touch-icon.png',
+            other: [
+                {
+                    rel: 'icon',
+                    url: '/favicon-32x32.png',
+                },
+            ],
+        },
+        manifest: '/site.webmanifest',
     };
 }
 
@@ -51,6 +64,7 @@ export default async function LocaleLayout({
                     <ModalProvider>
                         {children}
                         <CookieConsent />
+                        <FeatureDetailModal />
                     </ModalProvider>
                 </NextIntlClientProvider>
             </body>

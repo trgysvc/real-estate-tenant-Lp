@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, CheckCircle2, Loader2, Building2, User, Mail, Phone, Package } from "lucide-react";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 interface DemoModalProps {
     isOpen: boolean;
@@ -11,6 +12,7 @@ interface DemoModalProps {
 }
 
 export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
+    const t = useTranslations('DemoModal');
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
     const [formData, setFormData] = useState({
@@ -95,14 +97,14 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                             {!isSuccess ? (
                                 <>
                                     <div className="mb-8">
-                                        <h2 className="text-3xl font-bold mb-2">Demo Randevusu</h2>
-                                        <p className="text-slate-400">Geleceğin gayrimenkul teknolojilerini keşfetmek için formu doldurun.</p>
+                                        <h2 className="text-3xl font-bold mb-2">{t('title')}</h2>
+                                        <p className="text-slate-400">{t('subtitle')}</p>
                                     </div>
 
                                     <form onSubmit={handleSubmit} className="space-y-4">
                                         <div className="grid md:grid-cols-2 gap-4">
                                             <div className="space-y-2">
-                                                <label className="text-sm font-medium text-slate-300 ml-1">Ad Soyad</label>
+                                                <label className="text-sm font-medium text-slate-300 ml-1">{t('inputs.name')}</label>
                                                 <div className="relative">
                                                     <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
                                                     <input
@@ -110,13 +112,13 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                                                         type="text"
                                                         value={formData.fullName}
                                                         onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                                                        placeholder="John Doe"
+                                                        placeholder={t('inputs.namePlaceholder')}
                                                         className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pl-11 pr-4 focus:outline-none focus:border-primary transition-colors text-sm"
                                                     />
                                                 </div>
                                             </div>
                                             <div className="space-y-2">
-                                                <label className="text-sm font-medium text-slate-300 ml-1">E-posta</label>
+                                                <label className="text-sm font-medium text-slate-300 ml-1">{t('inputs.email')}</label>
                                                 <div className="relative">
                                                     <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
                                                     <input
@@ -124,7 +126,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                                                         type="email"
                                                         value={formData.email}
                                                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                                        placeholder="john@example.com"
+                                                        placeholder={t('inputs.emailPlaceholder')}
                                                         className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pl-11 pr-4 focus:outline-none focus:border-primary transition-colors text-sm"
                                                     />
                                                 </div>
@@ -133,7 +135,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
 
                                         <div className="grid md:grid-cols-2 gap-4">
                                             <div className="space-y-2">
-                                                <label className="text-sm font-medium text-slate-300 ml-1">Telefon</label>
+                                                <label className="text-sm font-medium text-slate-300 ml-1">{t('inputs.phone')}</label>
                                                 <div className="relative">
                                                     <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
                                                     <input
@@ -141,13 +143,13 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                                                         type="tel"
                                                         value={formData.phone}
                                                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                                                        placeholder="+90 5xx xxx xx xx"
+                                                        placeholder={t('inputs.phonePlaceholder')}
                                                         className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pl-11 pr-4 focus:outline-none focus:border-primary transition-colors text-sm"
                                                     />
                                                 </div>
                                             </div>
                                             <div className="space-y-2">
-                                                <label className="text-sm font-medium text-slate-300 ml-1">Firma Adı</label>
+                                                <label className="text-sm font-medium text-slate-300 ml-1">{t('inputs.company')}</label>
                                                 <div className="relative">
                                                     <Building2 className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
                                                     <input
@@ -155,7 +157,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                                                         type="text"
                                                         value={formData.companyName}
                                                         onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                                                        placeholder="Emlak Ofisi A.Ş."
+                                                        placeholder={t('inputs.companyPlaceholder')}
                                                         className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pl-11 pr-4 focus:outline-none focus:border-primary transition-colors text-sm"
                                                     />
                                                 </div>
@@ -163,7 +165,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                                         </div>
 
                                         <div className="space-y-2">
-                                            <label className="text-sm font-medium text-slate-300 ml-1">Tercih Edilen Paket</label>
+                                            <label className="text-sm font-medium text-slate-300 ml-1">{t('inputs.plan')}</label>
                                             <div className="relative">
                                                 <Package className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500 pointer-events-none" />
                                                 <select
@@ -194,7 +196,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                                                 <Loader2 className="w-5 h-5 animate-spin" />
                                             ) : (
                                                 <>
-                                                    Demo Talebi Gönder
+                                                    {t('submit')}
                                                     <motion.span
                                                         animate={{ x: [0, 4, 0] }}
                                                         transition={{ repeat: Infinity, duration: 1.5 }}
@@ -206,7 +208,9 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                                         </button>
 
                                         <p className="text-[11px] text-slate-500 text-center leading-tight">
-                                            Gönder butonuna basarak <Link href="/kvkk" onClick={onClose} className="text-primary hover:underline">Aydınlatma Metni</Link> uyarınca verilerinizin işlenmesini kabul etmiş sayılırsınız.
+                                            {t.rich('legal', {
+                                                link: (chunks) => <Link href="/data-protection" onClick={onClose} className="text-primary hover:underline">{chunks}</Link>
+                                            })}
                                         </p>
                                     </form>
                                 </>
@@ -219,12 +223,12 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                                     <div className="w-20 h-20 bg-emerald-500/10 rounded-full flex items-center justify-center mb-6">
                                         <CheckCircle2 className="w-12 h-12 text-emerald-500" />
                                     </div>
-                                    <h2 className="text-3xl font-bold mb-4">Harika!</h2>
+                                    <h2 className="text-3xl font-bold mb-4">{t('success.title')}</h2>
                                     <p className="text-slate-400 max-w-[280px]">
-                                        Talebiniz başarıyla alındı. Ekibimiz en kısa sürede sizinle iletişime geçecek.
+                                        {t('success.message')}
                                     </p>
                                     <div className="mt-8 text-sm text-slate-500 animate-pulse">
-                                        Pencere kapatılıyor...
+                                        {t('success.closing')}
                                     </div>
                                 </motion.div>
                             )}

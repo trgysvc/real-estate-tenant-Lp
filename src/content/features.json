@@ -1,0 +1,22 @@
+[
+    {
+        "id": "high-speed-search",
+        "icon": "Search",
+        "tech": "Typesense"
+    },
+    {
+        "id": "enterprise-security",
+        "icon": "ShieldCheck",
+        "tech": "Kinde / Stripe"
+    },
+    {
+        "id": "ai-assistant",
+        "icon": "Zap",
+        "tech": "Multi-Agent AI"
+    },
+    {
+        "id": "global-infrastructure",
+        "icon": "Globe",
+        "tech": "Next.js / Supabase"
+    }
+]

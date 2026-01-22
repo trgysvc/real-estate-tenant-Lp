@@ -1,8 +1,427 @@
 {
     "HomePage": {
-        "title": "Ana Sayfa"
+        "title": "Investrong CRM - Modern Gayrimenkul İçin Yapay Zeka Destekli İşletim Sistemi"
+    },
+    "Navbar": {
+        "links": {
+            "features": "Özellikler",
+            "solutions": "Çözümler",
+            "pricing": "Fiyatlandırma",
+            "contact": "İletişim"
+        },
+        "buttons": {
+            "demo": "Demo Randevusu Al"
+        }
+    },
+    "Footer": {
+        "description": "Gayrimenkul sektörünü yapay zeka ve modern teknik altyapı ile dönüştürüyoruz. Hız, güvenlik ve verimlilik odaklı yeni nesil işletim sistemi.",
+        "headers": {
+            "product": "Ürün",
+            "corporate": "Kurumsal",
+            "legal": "Yasal"
+        },
+        "links": {
+            "features": "Özellikler",
+            "solutions": "Çözümler",
+            "pricing": "Fiyatlandırma",
+            "roadmap": "Yol Haritası",
+            "faq": "Sık Sorulanlar",
+            "about": "Hakkımızda",
+            "career": "Kariyer",
+            "contact": "İletişim",
+            "blog": "Blog",
+            "privacy": "Gizlilik Politikası",
+            "terms": "Kullanım Şartları",
+            "cookies": "Çerez Politikası",
+            "kvkk": "KVKK"
+        },
+        "copyright": "© {year} {appName}. Tüm hakları saklıdır.",
+        "poweredBy": "Typesense, Kinde, Stripe, Supabase & Next.js ile desteklenmektedir"
+    },
+    "Hero": {
+        "badge": "Yeni Nesil Gayrimenkul İşletim Sistemi",
+        "title": {
+            "main": "Modern Gayrimenkul İçin",
+            "highlight": "Yapay Zeka Destekli",
+            "suffix": "İşletim Sistemi"
+        },
+        "description": "Hız, güvenlik ve yapay zeka bir arada. CRM, İlan Yönetimi ve Müşteri İlişkilerini tek bir platformda toplayan, teknik olarak kusursuz bir deneyim.",
+        "search": {
+            "placeholder": "Lüks villa, modern ofis, arsa...",
+            "badge": "TYPESENSE",
+            "latency": "0.2ms"
+        },
+        "mock": {
+            "item1": {
+                "title": "Modern Lüks Villa",
+                "location": "Beverly Hills"
+            },
+            "item2": {
+                "title": "Modern Penthouse",
+                "location": "Manhattan"
+            },
+            "item3": {
+                "title": "Deniz Manzaralı Malikane",
+                "location": "Miami"
+            },
+            "cta": "Hemen incele"
+        }
+    },
+    "CTA": {
+        "title": {
+            "main": "Geleceğin Gayrimenkul Dünyasına",
+            "highlight": "Hazır mısınız?"
+        },
+        "description": "Teknik gücümüzü sizin başarınız için kullanıyoruz. {appName} ile bugün tanışın.",
+        "buttons": {
+            "tryFree": "Ücretsiz Deneyin",
+            "talkToTeam": "Ekibimizle Konuşun"
+        }
+    },
+    "Pricing": {
+        "title": {
+            "main": "İşinizi Büyütecek",
+            "highlight": "Esnek Planlar"
+        },
+        "description": "Her ölçekteki emlak operasyonu için optimize edilmiş abonelik seçenekleri. Şimdi başlayın, işinizle birlikte ölçekleyin.",
+        "billing": {
+            "monthly": "Aylık",
+            "yearly": "Yıllık",
+            "discount": "%20 İndirim"
+        },
+        "cards": {
+            "popular": "En Popüler",
+            "idealFor": "{users} için ideal",
+            "start": "Hemen Başlayın",
+            "contact": "Bize Ulaşın",
+            "limits": "Limitler",
+            "features": "Özellikler",
+            "info": "Bilgi Al!",
+            "properties": "{count} Portföy",
+            "aiCredits": "{count} AI Kredisi"
+        },
+        "plans": {
+            "individual-lite": {
+                "name": "Bireysel (Lite)",
+                "users": "1 Kullanıcı",
+                "description": "Yeni başlayan bağımsız danışmanlar için temel araçlar.",
+                "features": {
+                    "0": "Temel Portföy Yönetimi",
+                    "1": "Dijital Kartvizit",
+                    "2": "E-posta Desteği",
+                    "3": "Yapay Zeka İlan Sihirbazı (Sınırlı)"
+                }
+            },
+            "individual-pro": {
+                "name": "Bireysel (Pro)",
+                "users": "1 Kullanıcı",
+                "description": "Yüksek portföy hacmine sahip, hız odaklı profesyoneller için.",
+                "features": {
+                    "0": "Gelişmiş Otomasyon Araçları",
+                    "1": "Öncelikli Teknik Destek",
+                    "2": "Profesyonel Raporlama",
+                    "3": "Yapay Zeka Destekli Müşteri Eşleştirme",
+                    "4": "Özel Web Sitesi Entegrasyonu"
+                }
+            },
+            "professional-lite": {
+                "name": "Profesyonel (Lite)",
+                "users": "5 Kullanıcı",
+                "description": "Küçük ekipler için iş birliği ve hiyerarşi odaklı başlangıç.",
+                "features": {
+                    "0": "Ekip Yönetimi ve Hiyerarşi",
+                    "1": "Asistan-Danışman Yetkilendirme",
+                    "2": "Ortak Havuz Portföy Erişimi",
+                    "3": "Temel Ofis İçi Mesajlaşma"
+                }
+            },
+            "professional-pro": {
+                "name": "Profesyonel (Pro)",
+                "users": "15 Kullanıcı",
+                "description": "Orta ölçekli ofisler için tam kapasite ekip koordinasyonu.",
+                "features": {
+                    "0": "Gelişmiş Ekip Performans Analizi",
+                    "1": "Gelişmiş Hiyerarşik Yetkilendirme",
+                    "2": "Görüntülü Görüşme Entegrasyonu",
+                    "3": "API Erişimi (Okuma)",
+                    "4": "Gelişmiş Raporlama Paneli"
+                }
+            },
+            "enterprise": {
+                "name": "Kurumsal (Enterprise)",
+                "users": "Sınırsız",
+                "description": "Büyük emlak zincirleri için ölçeklenebilir ve güvenli çözüm.",
+                "features": {
+                    "0": "Veri İzolasyonu (Private DB)",
+                    "1": "Özel Şifreleme Anahtarları",
+                    "2": "Full API Desteği & Webhook",
+                    "3": "Özel SLA Taahhüdü",
+                    "4": "Şube Bazlı Organizasyon"
+                }
+            }
+        }
+    },
+    "DemoModal": {
+        "title": "Demo Randevusu",
+        "subtitle": "Geleceğin gayrimenkul teknolojilerini keşfetmek için formu doldurun.",
+        "inputs": {
+            "name": "Ad Soyad",
+            "namePlaceholder": "John Doe",
+            "email": "E-posta",
+            "emailPlaceholder": "john@example.com",
+            "phone": "Telefon",
+            "phonePlaceholder": "+90 5xx xxx xx xx",
+            "company": "Firma Adı",
+            "companyPlaceholder": "Emlak Ofisi A.Ş.",
+            "plan": "Tercih Edilen Paket"
+        },
+        "submit": "Demo Talebi Gönder",
+        "legal": "Gönder butonuna basarak {link} uyarınca verilerinizin işlenmesini kabul etmiş sayılırsınız.",
+        "legalLink": "Aydınlatma Metni",
+        "success": {
+            "title": "Harika!",
+            "message": "Talebiniz başarıyla alındı. Ekibimiz en kısa sürede sizinle iletişime geçecek.",
+            "closing": "Pencere kapatılıyor..."
+        }
+    },
+    "Solutions": {
+        "title": "Her Role Uygun Çözümler",
+        "description": "İster bağımsız bir danışman olun, ister büyük bir mülk yönetim şirketi; {appName} sizin için ölçeklenir.",
+        "tabs": {
+            "agents": {
+                "label": "Emlak Ofisleri İçin",
+                "title": "Danışman Performansını ve İlan Yönetimini Optimize Edin",
+                "description": "Gayrimenkul danışmanlarınız için hiyerarşik yönetim ve detaylı performans takibi.",
+                "features": [
+                    "Gelişmiş Danışman Profilleri & Yorumlar",
+                    "Merkezi İletişim ve Randevu Takibi",
+                    "Matterport 3D ve Video Entegrasyonu",
+                    "Ofis Hiyerarşisi ve Yetkilendirme"
+                ]
+            },
+            "managers": {
+                "label": "Mülk Yönetimi İçin",
+                "title": "Portföyünüzü Profesyonelce Yönetin",
+                "description": "Geniş ölçekli konut projelerinden ticari alanlara kadar her şeyi tek bir yerden kontrol edin.",
+                "features": [
+                    "Büyük Ölçekli Yeni Konut Projeleri Yönetimi",
+                    "Kiracı ve Bakım Talebi Yönetimi",
+                    "Sosyal Donatı ve Alan Tanımları",
+                    "Proje Bazlı Özel Danışman Atama"
+                ]
+            }
+        }
     },
     "PrivacyPolicy": {
-        "title": "Gizlilik Politikası"
+        "title": "GİZLİLİK POLİTİKASI",
+        "lastUpdated": "Son Güncelleme: 01/01/2026",
+        "intro": "<bold>{appName}</bold> olarak, kullanıcılarımızın (\"Emlak Danışmanı\", \"Ofis Yöneticisi\" veya \"Kiracı Adayı\") gizliliğine önem veriyoruz. Bu metin, verilerinizin işlenme süreçlerini şeffaf bir şekilde açıklar.",
+        "sections": {
+            "1": {
+                "title": "1. Toplanan Veriler ve Kaynakları",
+                "content": "Hizmet sunumu sırasında projemizdeki veritabanı şeması ve teknik altyapı gereği aşağıdaki verileri topluyoruz:",
+                "items": [
+                    "<bold>Kimlik ve İletişim Bilgileri:</bold> Ad-soyad, e-posta adresi, telefon numarası, profil fotoğrafı (avatarUrl) ve sistem üzerindeki benzersiz kullanıcı kimlikleri (UUID/CUID).",
+                    "<bold>Profesyonel ve Ofis Verileri:</bold> Gayrimenkul ofisi lisans bilgileri (taşınmaz ticareti yetki belgesi), ticari unvan, ofis yerleşkesi (adres, koordinatlar), kurumsal sosyal medya hesapları (X, Facebook, Instagram, LinkedIn, YouTube) ve web sitesi URL'si.",
+                    "<bold>Taşınmaz (Gayrimenkul) Verileri:</bold> Portföyünüzdeki mülklerin detaylı özellikleri (fiyat, alan, oda sayısı, kat bilgisi, imar durumu, ada/parsel numaraları), konum koordinatları (enlem/boylam), tapu durumu, ilan görselleri ve videoları (3D kaynaklar dahil).",
+                    "<bold>Talep ve İletişim Kayıtları:</bold> Kiracı adaylarının veya müşterilerin gönderdiği mesaj içerikleri, iletişim formları, danışman puanlamaları ve yorumları (OfficeWorkerReview).",
+                    "<bold>Kullanım ve Tercih Verileri:</bold> Platform üzerindeki içerik arama/filtreleme alışkanlıkları, KVKK ve pazarlama izinlerine ilişkin onay kayıtları (marketingConsent, kvkkConsent).",
+                    "<bold>Teknik ve Cihaz Bilgileri:</bold> IP adresi, işletim sistemi, tarayıcı türü, sisteme giriş kayıtları (createdAt, updatedAt timestamps) ve içerik yönetim anahtarları."
+                ]
+            },
+            "2": {
+                "title": "2. Verilerin İşlenme Amaçları",
+                "content": "Verileriniz şu amaçlarla işlenir:",
+                "items": [
+                    "<bold>SaaS Hizmetinin Sağlanması:</bold> Emlak portföyünüzün yönetilmesi, dijital kartvizit ve ofis profillerinin oluşturulması, ilan yayınlama süreçlerinin yürütülmesi.",
+                    "<bold>Akıllı Eşleştirme ve Analiz:</bold> Müşteri talepleri ile gayrimenkul özelliklerinin teknik olarak karşılaştırılması, bölge bazlı konum analizleri ve operasyonel verimlilik.",
+                    "<bold>Güvenlik ve Denetim:</bold> Yetkisiz erişimlerin engellenmesi, işlem geçmişinin (activity_log) tutulması ve sistem optimizasyonu.",
+                    "<bold>İletişim Yönetimi:</bold> Müşteri taleplerinin ilgili danışmanlara yönlendirilmesi ve hizmet kalitesinin ölçülmesi."
+                ]
+            },
+            "3": {
+                "title": "3. Veri Saklama ve Altyapı",
+                "content": "<bold>{appName}</bold> altyapısı, yüksek performanslı Nvidia donanımları ve multi-agent yapay zeka sistemleri (Antigravity mimarisi) ile desteklenmektedir. Verileriniz, Postgres tabanlı ilişkisel veritabanlarında, endüstri standardı şifreleme yöntemleri kullanılarak güvenli sunucularda barındırılır."
+            },
+            "4": {
+                "title": "4. Veri Paylaşımı",
+                "content": "Verileriniz, kullanıcının açık rızası olmaksızın üçüncü taraflara satılmaz. Ancak;",
+                "items": [
+                    "<bold>Entegrasyonlar:</bold> İlan yayınlama işlemleri için yetkilendirdiğiniz platformlarla,",
+                    "<bold>Ödemeler:</bold> Ödeme altyapısı sağlayıcıları ve lisanslı ödeme kuruluşlarıyla,",
+                    "<bold>Yasal Yükümlülükler:</bold> Mevzuat gereği adli veya idari makamlarca talep edilmesi durumunda."
+                ]
+            },
+            "5": {
+                "title": "5. Kullanıcı Hakları",
+                "content": "Kullanıcılar; verilerine erişme, düzeltme, silme (unutulma hakkı) ve veri işleme faaliyetine itiraz etme hakkına sahiptir. Bu talepleriniz için <link>support@tukanft.com</link> adresi üzerinden bizimle iletişime geçebilirsiniz."
+            }
+        }
+    },
+    "TermsOfService": {
+        "title": "KULLANIM ŞARTLARI",
+        "lastUpdated": "Son Güncelleme: 22/01/2026",
+        "intro": "İşbu Kullanım Şartları, <bold>{appName}</bold> (\"Platform\") üzerinden sunulan hizmetlerin kullanımına ilişkin kuralları ve tarafların haklarını belirler. Platformu kullanarak bu şartları peşinen kabul etmiş sayılırsınız.",
+        "sections": {
+            "1": {
+                "title": "1. Hizmet Tanımı ve Kapsamı",
+                "content": "{appName}, gayrimenkul veri yönetimi, ilan portföy takibi, müşteri talepleri ile mülklerin yapay zeka destekli akıllı eşleştirilmesi ve dijital asistan hizmetleri sunan bulut tabanlı bir SaaS (Software as a Service) platformudur. Platform, seçilen abonelik paketine göre farklı teknik kapasiteler sunar."
+            },
+            "2": {
+                "title": "2. Üyelik ve Hesap Güvenliği",
+                "content": "Kullanıcılar, kayıt sırasında verdikleri bilgilerin doğruluğundan ve güncelliğinden sorumludur. Hesabınıza erişim sağlayan şifrelerin güvenliği tamamen kullanıcının sorumluluğundadır. Yetkisiz bir erişim fark edildiğinde derhal destek ekibimize bildirilmesi gerekmektedir."
+            },
+            "3": {
+                "title": "3. Abonelik Paketleri ve Ödeme",
+                "content": "Kullanıcı, seçtiği paketin (Bireysel Lite/Pro, Profesyonel Lite/Pro, Kurumsal) teknik limitlerini (ilan sayısı, kullanıcı sayısı vb.) kabul eder. Ücretler, seçilen faturalandırma dönemine (aylık/yıllık) göre dönem başında tahsil edilir.",
+                "items": [
+                    "<bold>Yükseltme (Upgrade):</bold> Dilediğiniz zaman üst pakete geçebilirsiniz. Mevcut bakiyeniz yeni paketten mahsup edilir.",
+                    "<bold>Düşürme (Downgrade):</bold> Paket düşürme işlemleri dönem sonunda aktifleşir. Dönem ortası iade yapılmaz.",
+                    "<bold>Teknik Limit Aşımı:</bold> Limitlerin aşılması durumunda sistem uyarı verir. Limit aşımı nedeniyle oluşabilecek veri kayıplarından {appName} sorumlu tutulamaz."
+                ]
+            },
+            "4": {
+                "title": "4. Kullanım Kuralları ve Sorumluluklar",
+                "content": "Platformun tersine mühendislik yöntemleriyle kopyalanması, sistem güvenliğinin zorlanması veya platform üzerinden yasaya aykırı içerik paylaşılması kesinlikle yasaktır. Kullanıcı, platformu sadece ticari ve etik kurallar çerçevesinde kullanmayı taahhüt eder."
+            },
+            "5": {
+                "title": "5. Yapay Zeka ve Veri İşleme",
+                "content": "{appName}, yüksek performanslı Nvidia donanımları ve multi-agent yapay zeka sistemleri (Antigravity mimarisi) kullanarak verimlilik analizi yapar. Bu sistemler, verilerinizi anonimleştirilmiş istatistiksel veriler olarak işleyerek eşleştirme algoritmalarını optimize eder."
+            },
+            "6": {
+                "title": "6. Fikri Mülkiyet Hakları",
+                "content": "Platformun tüm yazılım kodları, tasarımı, logoları ve algoritmaları {appName}'in mülkiyetindedir. Kullanıcılara sağlanan erişim hakkı, sınırlı ve devredilemez bir kullanım lisansıdır."
+            },
+            "7": {
+                "title": "7. Sorumluluk Sınırlandırması",
+                "content": "{appName}, teknik arızalardan, siber saldırılardan veya mücbir sebeplerden kaynaklanabilecek veri kayıpları veya geçici erişim kesintilerinden sorumlu tutulamaz. Platform \"olduğu gibi\" sunulmaktadır ve kesin ticari kazanç garantisi vermez."
+            },
+            "8": {
+                "title": "8. Değişiklikler",
+                "content": "Platform yönetimi, işbu kullanım şartlarını dilediği zaman güncelleme hakkını saklı tutar. Önemli değişiklikler kullanıcılara e-posta veya sistem içi bildirimler aracılığıyla duyurulur. Güncel şartlar yayınlandığı andan itibaren yürürlüğe girer."
+            }
+        }
+    },
+    "CookiePolicy": {
+        "title": "ÇEREZ POLİTİKASI (COOKIE POLICY)",
+        "lastUpdated": "Son Güncelleme: 22/01/2026",
+        "intro": "<bold>{appName}</bold> (\"Şirket\") olarak, web sitemizi ve uygulamalarımızı ziyaretiniz sırasında deneyiminizi geliştirmek, hizmetlerimizi optimize etmek ve güvenliğinizi sağlamak amacıyla çerezler (cookies) kullanmaktayız.",
+        "sections": {
+            "1": {
+                "title": "1. Çerez Nedir?",
+                "content": "Çerezler, ziyaret ettiğiniz web siteleri tarafından tarayıcınıza veya cihazınıza bırakılan küçük metin dosyalarıdır. Bu dosyalar, sitemizin sizi tanımasını ve bir sonraki ziyaretinizde tercihlerinizi (dil, oturum durumu vb.) hatırlamasını sağlar."
+            },
+            "2": {
+                "title": "2. Hangi Çerezleri ve Neden Kullanıyoruz?",
+                "content": "Platformumuzda kullanılan çerezleri aşağıdaki kategorilere ayırıyoruz:",
+                "items": [
+                    {
+                        "title": "Zorunlu Çerezler:",
+                        "desc": "Sitenin temel işlevlerini (oturum yönetimi, güvenlik) yerine getirmesi için gereklidir. Bu çerezler olmadan platform düzgün çalışmaz."
+                    },
+                    {
+                        "title": "Performans ve Analiz Çerezleri:",
+                        "desc": "Sitemizin hızını (örneğin Typesense arama performansını) ve kullanıcıların sayfalar arasında nasıl gezindiğini anonim olarak ölçmemize yardımcı olur."
+                    },
+                    {
+                        "title": "Fonksiyonel Çerezler:",
+                        "desc": "\"Beni Hatırla\" seçeneği gibi tercihlerinizi kaydetmek ve size kişiselleştirilmiş bir deneyim sunmak için kullanılır."
+                    },
+                    {
+                        "title": "Akıllı Eşleştirme ve Hedefleme Çerezleri:",
+                        "desc": "Yapay zeka tabanlı sistemlerimizin, portföy tercihlerinizle en uyumlu ilanları ve özellikleri size sunabilmesi amacıyla kullanım alışkanlıklarınızı analiz eder."
+                    }
+                ]
+            },
+            "3": {
+                "title": "3. Çerez Yönetimi ve Tercihler",
+                "content": "Çerezleri kabul etmek zorunda değilsiniz. Çoğu tarayıcı çerezleri otomatik olarak kabul eder ancak siz şu yöntemlerle bunları kontrol edebilirsiniz:",
+                "items": [
+                    "<bold>Tarayıcı Ayarları:</bold> Tarayıcınızın ayarlar kısmından çerezleri tamamen engelleyebilir veya silinecek şekilde ayarlayabilirsiniz.",
+                    "<bold>Onay Çubuğu:</bold> Web sitemize ilk girişinizde karşınıza çıkan onay çubuğu üzerinden tercihlerinizi yönetebilirsiniz."
+                ],
+                "note": "Not: Zorunlu çerezlerin engellenmesi durumunda {appName} panelindeki bazı özelliklere erişiminiz kısıtlanabilir."
+            },
+            "4": {
+                "title": "4. İletişim",
+                "content": "Çerez kullanımımızla ilgili her türlü sorunuz için bizimle iletişime geçebilirsiniz: <br /> <span class=\"text-white\">E-posta:</span> <link>support@tenancyestate.com</link>"
+            }
+        }
+    },
+    "BentoGrid": {
+        "title": "Neden Biz?",
+        "description": "Teknik üstünlüğümüzü işinizi büyütmeniz için tasarladık. Modern gayrimenkulün tüm ihtiyaçları tek bir çatı altında.",
+        "cta": "Detaylı İncele",
+        "items": {
+            "high-speed-search": {
+                "title": "Milisaniyeler Süren Akıllı Arama",
+                "description": "Typesense in-memory teknolojisiyle 0.2ms hızında arama deneyimi. Yazım hatalarını tolere eden, anlık filtrelenebilir ilan listeleme sistemiyle müşterilerinize bekletmeden cevap verin.",
+                "tech": "Typesense",
+                "icon": "Search"
+            },
+            "enterprise-security": {
+                "title": "Banka Düzeyinde Veri Koruması",
+                "description": "Kinde kimlik doğrulama ve Stripe ödeme altyapısıyla uçtan uca güvenlik. Verileriniz AES-256 standartlarında şifrelenir ve kurumsal paketlerde tamamen izole veritabanlarında saklanır.",
+                "tech": "Kinde / Stripe",
+                "icon": "ShieldCheck"
+            },
+            "ai-assistant": {
+                "title": "Yapay Zeka Destekli Operasyon Merkezi",
+                "description": "Antigravity multi-agent mimarisiyle ilan açıklamalarınızı otomatik oluşturun, müşteri taleplerini mülklerle saniyeler içinde eşleştirin ve manuel veri girişini %80 oranında azaltın.",
+                "tech": "Multi-Agent AI",
+                "icon": "Zap"
+            },
+            "global-infrastructure": {
+                "title": "Kesintisiz Global Performans",
+                "description": "Nvidia donanımlarıyla güçlendirilmiş GPU tabanlı sunucular ve %99.9 uptime garantisi. Dünyanın her yerinden, her cihazla ofisinize anında erişin.",
+                "tech": "Next.js / Supabase",
+                "icon": "Globe"
+            }
+        }
+    },
+    "KVKKPage": {
+        "title": "6698 SAYILI KVKK UYARINCA AYDINLATMA METNİ",
+        "intro": "<bold>Veri Sorumlusu: {appName} (Şirket Unvanı Buraya Gelecek)</bold>",
+        "introContent": "{appName} olarak, kişisel verilerinizin güvenliğine ve hukuka uygun işlenmesine azami önem veriyoruz. 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) uyarınca, veri sorumlusu sıfatıyla sizi bilgilendirmek isteriz.",
+        "sections": {
+            "1": {
+                "title": "1. İşlenen Kişisel Verileriniz",
+                "content": "Platformumuzu kullanımınız sırasında şu verileriniz işlenmektedir:",
+                "items": [
+                    "<bold>Kimlik Bilgileri:</bold> Ad, soyad, T.C. kimlik numarası (doğrulama gerektiren durumlarda).",
+                    "<bold>İletişim Bilgileri:</bold> E-posta adresi, telefon numarası.",
+                    "<bold>Müşteri İşlem Bilgileri:</bold> Seçilen abonelik paketi (Bireysel/Profesyonel/Kurumsal), ilan detayları, randevu kayıtları.",
+                    "<bold>İşlem Güvenliği:</bold> IP adresi, giriş-çıkış kayıtları, şifre bilgileri."
+                ]
+            },
+            "2": {
+                "title": "2. Kişisel Verilerin İşlenme Amaçları",
+                "content": "Kişisel verileriniz;",
+                "items": [
+                    "Sözleşme süreçlerinin yürütülmesi ve hizmetin (SaaS) ifası,",
+                    "Yapay zeka destekli akıllı eşleştirme ve emlak yönetim sisteminin optimizasyonu,",
+                    "Finans ve muhasebe işlerinin (fatura/ödeme) takibi,",
+                    "Mevzuattan kaynaklanan hukuki yükümlülüklerin yerine getirilmesi amaçlarıyla işlenir."
+                ]
+            },
+            "3": {
+                "title": "3. Kişisel Verilerin Aktarılması",
+                "content": "Verileriniz, yalnızca aşağıdaki durumlarda üçüncü taraflarla paylaşılır:",
+                "items": [
+                    "<bold>Hizmet Sağlayıcılar:</bold> Altyapı ve barındırma hizmeti alınan iş ortakları (Örn: Donanım ve yapay zeka altyapısı sağlayıcıları).",
+                    "<bold>Ödeme Kuruluşları:</bold> Abonelik ücretlerinin tahsil edilmesi amacıyla lisanslı ödeme firmaları.",
+                    "<bold>Hukuki Talepler:</bold> Yetkili kamu kurum ve kuruluşları ile adli makamlara yasal zorunluluklar dahilinde."
+                ]
+            },
+            "4": {
+                "title": "4. Veri Toplama Yöntemi ve Hukuki Sebepler",
+                "content": "Kişisel verileriniz, {appName} web sitesi ve mobil uygulaması üzerinden tamamen otomatik yöntemlerle; \"bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması\" ve \"veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi\" hukuki sebeplerine dayanarak toplanmaktadır."
+            },
+            "5": {
+                "title": "5. Veri Sahibi Olarak Haklarınız (Madde 11)",
+                "content": "KVKK kapsamında; verilerinizin işlenip işlenmediğini öğrenme, yanlış verilerin düzeltilmesini isteme, verilerin silinmesini talep etme ve uğradığınız zararın giderilmesini isteme haklarına sahipsiniz.",
+                "contact": "Haklarınızı kullanmak için <link>support@tenancyestate.com</link> adresine başvurabilirsiniz."
+            }
+        }
     }
 }

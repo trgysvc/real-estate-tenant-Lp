@@ -1,4 +1,4 @@
-export const APP_NAME = "Investory CRM";
+export const APP_NAME = "Investrong CRM";
 export const APP_DESCRIPTION = "Modern Gayrimenkul İçin Yapay Zeka Destekli İşletim Sistemi.";
 
 export const COLORS = {
@@ -10,10 +10,10 @@ export const COLORS = {
 };
 
 export const NAV_LINKS = [
-  { label: "Özellikler", href: "#features" },
-  { label: "Çözümler", href: "#solutions" },
-  { label: "Fiyatlandırma", href: "#pricing" },
-  { label: "İletişim", href: "#contact" },
+  { id: "features", href: "/features" },
+  { id: "solutions", href: "#solutions" },
+  { id: "pricing", href: "#pricing" },
+  { id: "contact", href: "#contact" },
 ];
 
 export const TECHNICAL_BENEFITS = [

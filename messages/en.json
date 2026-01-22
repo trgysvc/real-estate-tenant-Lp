@@ -1,8 +1,427 @@
 {
     "HomePage": {
-        "title": "Home Page"
+        "title": "Investrong CRM - AI Powered Operating System for Modern Real Estate"
+    },
+    "Navbar": {
+        "links": {
+            "features": "Features",
+            "solutions": "Solutions",
+            "pricing": "Pricing",
+            "contact": "Contact"
+        },
+        "buttons": {
+            "demo": "Book a Demo"
+        }
+    },
+    "Footer": {
+        "description": "Transforming the real estate industry with AI and modern technical infrastructure. Focus on speed, security, and efficiency.",
+        "headers": {
+            "product": "Product",
+            "corporate": "Corporate",
+            "legal": "Legal"
+        },
+        "links": {
+            "features": "Features",
+            "solutions": "Solutions",
+            "pricing": "Pricing",
+            "roadmap": "Roadmap",
+            "faq": "FAQ",
+            "about": "About Us",
+            "career": "Careers",
+            "contact": "Contact",
+            "blog": "Blog",
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service",
+            "cookies": "Cookie Policy",
+            "kvkk": "KVKK (Data Protection)"
+        },
+        "copyright": "© {year} {appName}. All rights reserved.",
+        "poweredBy": "Powered by Typesense, Kinde, Stripe, Supabase & Next.js"
+    },
+    "Hero": {
+        "badge": "Next Generation Real Estate OS",
+        "title": {
+            "main": "Operating System for Modern Real Estate",
+            "highlight": "AI Powered",
+            "suffix": ""
+        },
+        "description": "Speed, security, and AI combined. A technically flawless experience gathering CRM, Listing Management, and Customer Relations in one platform.",
+        "search": {
+            "placeholder": "Luxury villa, modern office, land...",
+            "badge": "TYPESENSE",
+            "latency": "0.2ms"
+        },
+        "mock": {
+            "item1": {
+                "title": "Modern Luxury Villa",
+                "location": "Beverly Hills"
+            },
+            "item2": {
+                "title": "Modern Penthouse",
+                "location": "Manhattan"
+            },
+            "item3": {
+                "title": "Ocean View Mansion",
+                "location": "Miami"
+            },
+            "cta": "View now"
+        }
+    },
+    "CTA": {
+        "title": {
+            "main": "Are You Ready For",
+            "highlight": "The Future of Real Estate?"
+        },
+        "description": "We use our technical power for your success. Meet {appName} today.",
+        "buttons": {
+            "tryFree": "Try for Free",
+            "talkToTeam": "Talk to Team"
+        }
+    },
+    "Pricing": {
+        "title": {
+            "main": "Flexible Plans to",
+            "highlight": "Grow Your Business"
+        },
+        "description": "Subscription options optimized for real estate operations of all sizes. Start now, scale with your business.",
+        "billing": {
+            "monthly": "Monthly",
+            "yearly": "Yearly",
+            "discount": "20% OFF"
+        },
+        "cards": {
+            "popular": "Most Popular",
+            "idealFor": "Ideal for {users}",
+            "start": "Get Started",
+            "contact": "Contact Us",
+            "limits": "Limits",
+            "features": "Features",
+            "info": "Get Info",
+            "properties": "{count} Properties",
+            "aiCredits": "{count} AI Credits"
+        },
+        "plans": {
+            "individual-lite": {
+                "name": "Individual (Lite)",
+                "users": "1 User",
+                "description": "Basic tools for independent agents just starting out.",
+                "features": {
+                    "0": "Basic Portfolio Management",
+                    "1": "Digital Business Card",
+                    "2": "Email Support",
+                    "3": "AI Listing Wizard (Limited)"
+                }
+            },
+            "individual-pro": {
+                "name": "Individual (Pro)",
+                "users": "1 User",
+                "description": "For high-volume, speed-focused professionals.",
+                "features": {
+                    "0": "Advanced Automation Tools",
+                    "1": "Priority Technical Support",
+                    "2": "Professional Reporting",
+                    "3": "AI-Powered Customer Matching",
+                    "4": "Custom Website Integration"
+                }
+            },
+            "professional-lite": {
+                "name": "Professional (Lite)",
+                "users": "5 Users",
+                "description": "Collaboration and hierarchy-focused start for small teams.",
+                "features": {
+                    "0": "Team Management & Hierarchy",
+                    "1": "Assistant-Agent Authorization",
+                    "2": "Shared Pool Portfolio Access",
+                    "3": "Basic Intra-Office Messaging"
+                }
+            },
+            "professional-pro": {
+                "name": "Professional (Pro)",
+                "users": "15 Users",
+                "description": "Full-capacity team coordination for mid-sized offices.",
+                "features": {
+                    "0": "Advanced Team Performance Analysis",
+                    "1": "Advanced Hierarchical Authorization",
+                    "2": "Video Call Integration",
+                    "3": "API Access (Read)",
+                    "4": "Advanced Reporting Dashboard"
+                }
+            },
+            "enterprise": {
+                "name": "Enterprise",
+                "users": "Unlimited",
+                "description": "Scalable and secure solution for large real estate chains.",
+                "features": {
+                    "0": "Data Isolation (Private DB)",
+                    "1": "Private Encryption Keys",
+                    "2": "Full API Support & Webhook",
+                    "3": "Custom SLA Commitment",
+                    "4": "Branch-Based Organization"
+                }
+            }
+        }
+    },
+    "DemoModal": {
+        "title": "Book a Demo",
+        "subtitle": "Fill out the form to discover the future of real estate technologies.",
+        "inputs": {
+            "name": "Full Name",
+            "namePlaceholder": "John Doe",
+            "email": "Email",
+            "emailPlaceholder": "john@example.com",
+            "phone": "Phone",
+            "phonePlaceholder": "+1 555 123 4567",
+            "company": "Company Name",
+            "companyPlaceholder": "Real Estate Agency Inc.",
+            "plan": "Preferred Plan"
+        },
+        "submit": "Submit Request",
+        "legal": "By clicking submit, you agree to the processing of your data in accordance with the {link}.",
+        "legalLink": "Clarification Text",
+        "success": {
+            "title": "Great!",
+            "message": "Your request has been received. Our team will contact you shortly.",
+            "closing": "Closing window..."
+        }
+    },
+    "Solutions": {
+        "title": "Solutions for Every Role",
+        "description": "Whether you are an independent agent or a large property management company; {appName} scales for you.",
+        "tabs": {
+            "agents": {
+                "label": "For Real Estate Agencies",
+                "title": "Optimize Agent Performance and Listing Management",
+                "description": "Hierarchical management and detailed performance tracking for your real estate agents.",
+                "features": [
+                    "Advanced Agent Profiles & Reviews",
+                    "Centralized Communication and Appointment Tracking",
+                    "Matterport 3D and Video Integration",
+                    "Office Hierarchy and Authorization"
+                ]
+            },
+            "managers": {
+                "label": "For Property Management",
+                "title": "Manage Your Portfolio Professionally",
+                "description": "Control everything from large-scale residential projects to commercial areas from a single place.",
+                "features": [
+                    "Large Scale Residential Project Management",
+                    "Tenant and Maintenance Request Management",
+                    "Social Facility and Area Definitions",
+                    "Project-Based Special Agent Assignment"
+                ]
+            }
+        }
     },
     "PrivacyPolicy": {
-        "title": "Privacy Policy"
+        "title": "PRIVACY POLICY",
+        "lastUpdated": "Last Updated: 01/01/2026",
+        "intro": "As <bold>{appName}</bold>, we value the privacy of our users (\"Real Estate Agent\", \"Office Manager\" or \"Tenant Candidate\"). This text transparently explains the processing of your data.",
+        "sections": {
+            "1": {
+                "title": "1. Collected Data and Sources",
+                "content": "During service provision, due to our database schema and technical infrastructure, we collect the following data:",
+                "items": [
+                    "<bold>Identity and Contact Information:</bold> Name-surname, email address, phone number, profile photo (avatarUrl), and unique user IDs on the system (UUID/CUID).",
+                    "<bold>Professional and Office Data:</bold> Real estate office license information (real estate trade authorization certificate), trade name, office location (address, coordinates), corporate social media accounts (X, Facebook, Instagram, LinkedIn, YouTube), and website URL.",
+                    "<bold>Property (Real Estate) Data:</bold> Detailed features of properties in your portfolio (price, area, number of rooms, floor info, zoning status, island/parcel numbers), location coordinates (latitude/longitude), title deed status, listing images and videos (including 3D resources).",
+                    "<bold>Request and Communication Records:</bold> Message contents sent by tenant candidates or customers, contact forms, agent ratings, and reviews (OfficeWorkerReview).",
+                    "<bold>Usage and Preference Data:</bold> Content search/filtering habits on the platform, consent records regarding KVKK and marketing permissions (marketingConsent, kvkkConsent).",
+                    "<bold>Technical and Device Information:</bold> IP address, operating system, browser type, system login records (createdAt, updatedAt timestamps), and content management keys."
+                ]
+            },
+            "2": {
+                "title": "2. Purposes of Processing Data",
+                "content": "Your data is processed for the following purposes:",
+                "items": [
+                    "<bold>Provision of SaaS Service:</bold> Managing your real estate portfolio, creating digital business cards and office profiles, executing listing publishing processes.",
+                    "<bold>Smart Matching and Analysis:</bold> Technically comparing customer requests with property features, location-based analysis, and operational efficiency.",
+                    "<bold>Security and Audit:</bold> Preventing unauthorized access, keeping transaction history (activity_log), and system optimization.",
+                    "<bold>Communication Management:</bold> Directing customer requests to relevant agents and measuring service quality."
+                ]
+            },
+            "3": {
+                "title": "3. Data Storage and Infrastructure",
+                "content": "<bold>{appName}</bold> infrastructure is supported by high-performance Nvidia hardware and multi-agent AI systems (Antigravity architecture). Your data is hosted on secure servers using industry-standard encryption methods in Postgres-based relational databases."
+            },
+            "4": {
+                "title": "4. Data Sharing",
+                "content": "Your data is not sold to third parties without the user's explicit consent. However;",
+                "items": [
+                    "<bold>Integrations:</bold> With platforms you authorize for listing publishing transactions,",
+                    "<bold>Payments:</bold> With payment infrastructure providers and licensed payment institutions,",
+                    "<bold>Legal Obligations:</bold> In case it is requested by judicial or administrative authorities due to legislation."
+                ]
+            },
+            "5": {
+                "title": "5. User Rights",
+                "content": "Users have the right to access, correct, delete (right to be forgotten), and object to data processing activities. You can contact us via <link>support@tukanft.com</link> for these requests."
+            }
+        }
+    },
+    "TermsOfService": {
+        "title": "TERMS OF SERVICE",
+        "lastUpdated": "Last Updated: 22/01/2026",
+        "intro": "These Terms of Service determine the rules for the use of the services offered via <bold>{appName}</bold> (\"Platform\") and the rights of the parties. By using the Platform, you are deemed to have accepted these terms in advance.",
+        "sections": {
+            "1": {
+                "title": "1. Definition and Scope of Service",
+                "content": "{appName} is a cloud-based SaaS (Software as a Service) platform that offers real estate data management, listing portfolio tracking, smart matching of customer requests with properties supported by AI, and digital assistant services. The platform offers different technical capacities depending on the chosen subscription plan."
+            },
+            "2": {
+                "title": "2. Membership and Account Security",
+                "content": "Users are responsible for the accuracy and currency of the information they provide during registration. The security of the passwords providing access to your account is entirely the responsibility of the user. In case of unauthorized access, it must be reported to our support team immediately."
+            },
+            "3": {
+                "title": "3. Subscription Plans and Payment",
+                "content": "The user accepts the technical limits (number of listings, number of users, etc.) of the chosen plan (Individual Lite/Pro, Professional Lite/Pro, Enterprise). Fees are collected at the beginning of the period according to the selected billing period (monthly/yearly).",
+                "items": [
+                    "<bold>Upgrade:</bold> You can switch to a higher plan at any time. Your current balance is deducted from the new plan.",
+                    "<bold>Downgrade:</bold> Plan downgrade operations become active at the end of the period. No refunds are made during the period.",
+                    "<bold>Technical Limit Exceeded:</bold> The system gives a warning if the limits are exceeded. {appName} cannot be held responsible for data losses that may occur due to limit overruns."
+                ]
+            },
+            "4": {
+                "title": "4. Rules of Use and Responsibilities",
+                "content": "Copying the platform through reverse engineering methods, forcing system security, or sharing illegal content via the platform is strictly prohibited. The user undertakes to use the platform only within the framework of commercial and ethical rules."
+            },
+            "5": {
+                "title": "5. AI and Data Processing",
+                "content": "{appName} uses high-performance Nvidia hardware and multi-agent AI systems (Antigravity architecture) to perform efficiency analysis. These systems optimize matching algorithms by processing your data as anonymized statistical data."
+            },
+            "6": {
+                "title": "6. Intellectual Property Rights",
+                "content": "All software codes, designs, logos, and algorithms of the Platform are the property of {appName}. The access right granted to users is a limited and non-transferable license of use."
+            },
+            "7": {
+                "title": "7. Limitation of Responsibility",
+                "content": "{appName} cannot be held responsible for data losses or temporary access interruptions that may arise from technical failures, cyber attacks, or force majeure. The platform is offered \"as is\" and does not guarantee definite commercial gain."
+            },
+            "8": {
+                "title": "8. Changes",
+                "content": "Platform management reserves the right to update these terms of use at any time. Important changes are announced to users via email or in-system notifications. Current terms come into force from the moment they are published."
+            }
+        }
+    },
+    "CookiePolicy": {
+        "title": "COOKIE POLICY",
+        "lastUpdated": "Last Updated: 22/01/2026",
+        "intro": "As <bold>{appName}</bold> (\"Company\"), we use cookies to improve your experience, optimize our services, and ensure your security during your visit to our website and applications.",
+        "sections": {
+            "1": {
+                "title": "1. What is a Cookie?",
+                "content": "Cookies are small text files left on your browser or device by the websites you visit. These files allow our site to recognize you and remember your preferences (language, session status, etc.) on your next visit."
+            },
+            "2": {
+                "title": "2. Which Cookies Do We Use and Why?",
+                "content": "We categorize the cookies used on our platform as follows:",
+                "items": [
+                    {
+                        "title": "Essential Cookies:",
+                        "desc": "Necessary for the site to perform its basic functions (session management, security). The platform will not work properly without these cookies."
+                    },
+                    {
+                        "title": "Performance and Analysis Cookies:",
+                        "desc": "Help us anonymously measure the speed of our site (e.g., Typesense search performance) and how users navigate between pages."
+                    },
+                    {
+                        "title": "Functional Cookies:",
+                        "desc": "Used to save your preferences such as the \"Remember Me\" option and provide you with a personalized experience."
+                    },
+                    {
+                        "title": "Smart Matching and Targeting Cookies:",
+                        "desc": "Analyzes your usage habits so that our AI-based systems can offer you the most compatible listings and features with your portfolio preferences."
+                    }
+                ]
+            },
+            "3": {
+                "title": "3. Cookie Management and Preferences",
+                "content": "You do not have to accept cookies. Most browsers automatically accept cookies, but you can control them in the following ways:",
+                "items": [
+                    "<bold>Browser Settings:</bold> You can completely block cookies or set them to be deleted from your browser's settings section.",
+                    "<bold>Consent Bar:</bold> You can manage your preferences via the consent bar that appears when you first log in to our website."
+                ],
+                "note": "Note: If essential cookies are blocked, your access to some features in the {appName} panel may be restricted."
+            },
+            "4": {
+                "title": "4. Contact",
+                "content": "You can contact us for any questions regarding our use of cookies: <br /> <span class=\"text-white\">Email:</span> <link>support@tenancyestate.com</link>"
+            }
+        }
+    },
+    "BentoGrid": {
+        "title": "Why Us?",
+        "description": "We designed our technical superiority for you to grow your business. All the needs of modern real estate under one roof.",
+        "cta": "View Details",
+        "items": {
+            "high-speed-search": {
+                "title": "Millisecond-Fast Intelligent Search",
+                "description": "Experience 0.2ms search speeds powered by Typesense in-memory technology. Provide instant answers to your clients with typo-tolerant, real-time filterable listing systems—zero waiting time.",
+                "tech": "Typesense",
+                "icon": "Search"
+            },
+            "enterprise-security": {
+                "title": "Bank-Grade Data Protection",
+                "description": "End-to-end security with Kinde authentication and Stripe payment infrastructure. Your data is encrypted using AES-256 standards, with dedicated database isolation available for Enterprise plans.",
+                "tech": "Kinde / Stripe",
+                "icon": "ShieldCheck"
+            },
+            "ai-assistant": {
+                "title": "AI-Powered Operations Center",
+                "description": "Automatically generate property descriptions and match client requests with properties in seconds using Antigravity’s multi-agent architecture. Reduce manual data entry by 80% and focus on closing deals.",
+                "tech": "Multi-Agent AI",
+                "icon": "Zap"
+            },
+            "global-infrastructure": {
+                "title": "Seamless Global Performance",
+                "description": "Powered by Nvidia hardware and GPU-based servers with a 99.9% uptime guarantee. Access your office instantly from anywhere in the world, on any device, with no performance compromises.",
+                "tech": "Next.js / Supabase",
+                "icon": "Globe"
+            }
+        }
+    },
+    "KVKKPage": {
+        "title": "CLARIFICATION TEXT PURSUANT TO THE LAW ON PROTECTION OF PERSONAL DATA No. 6698",
+        "intro": "<bold>Data Controller: {appName} (Company Title Will Be Here)</bold>",
+        "introContent": "As {appName}, we attach utmost importance to the security of your personal data and its processing in accordance with the law. We would like to inform you as the data controller pursuant to the Law on Protection of Personal Data No. 6698 (\"KVKK\").",
+        "sections": {
+            "1": {
+                "title": "1. Processed Personal Data",
+                "content": "During your use of our platform, the following data is processed:",
+                "items": [
+                    "<bold>Identity Information:</bold> Name, surname, TR ID number (in cases requiring verification).",
+                    "<bold>Contact Information:</bold> Email address, phone number.",
+                    "<bold>Customer Transaction Information:</bold> Selected subscription package (Individual/Professional/Enterprise), listing details, appointment records.",
+                    "<bold>Transaction Security:</bold> IP address, login-logout records, password information."
+                ]
+            },
+            "2": {
+                "title": "2. Purposes of Processing Personal Data",
+                "content": "Your personal data is processed for the purposes of;",
+                "items": [
+                    "Execution of contract processes and performance of the service (SaaS),",
+                    "Optimization of AI-supported smart matching and real estate management system,",
+                    "Follow-up of finance and accounting transactions (invoice/payment),",
+                    "Fulfillment of legal obligations arising from legislation."
+                ]
+            },
+            "3": {
+                "title": "3. Transfer of Personal Data",
+                "content": "Your data is shared with third parties only in the following cases:",
+                "items": [
+                    "<bold>Service Providers:</bold> Business partners from whom infrastructure and hosting services are received (e.g., Hardware and AI infrastructure providers).",
+                    "<bold>Payment Institutions:</bold> Licensed payment firms for the purpose of collecting subscription fees.",
+                    "<bold>Legal Requests:</bold> To authorized public institutions and organizations and judicial authorities within legal obligations."
+                ]
+            },
+            "4": {
+                "title": "4. Method of Data Collection and Legal Grounds",
+                "content": "Your personal data is collected via the {appName} website and mobile application through fully automated methods; based on the legal grounds of \"processing of personal data of the parties of a contract is necessary, provided that it is directly related to the establishment or performance of the contract\" and \"it is mandatory for the data controller to fulfill its legal obligation\"."
+            },
+            "5": {
+                "title": "5. Your Rights as the Data Owner (Article 11)",
+                "content": "Within the scope of KVKK; you have the right to learn whether your data is processed, to request correction of incorrect data, to request deletion of data, and to demand compensation for the damage you suffer.",
+                "contact": "You can apply to <link>support@tenancyestate.com</link> to exercise your rights."
+            }
+        }
     }
 }

@@ -3,8 +3,10 @@ import React from 'react';
 import { Link } from '@/i18n/routing';
 import { APP_NAME } from '@/constants/config';
 import { Building2, Github, Twitter, Linkedin } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export const Footer = () => {
+    const t = useTranslations('Footer');
     const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
         const id = href.replace('#', '');
@@ -35,7 +37,7 @@ export const Footer = () => {
                             <span className="text-xl font-bold tracking-tight">{APP_NAME}</span>
                         </div>
                         <p className="text-slate-400 mb-8 leading-relaxed">
-                            Gayrimenkul sektörünü yapay zeka ve modern teknik altyapı ile dönüştürüyoruz. Hız, güvenlik ve verimlilik odaklı yeni nesil işletim sistemi.
+                            {t('description')}
                         </p>
                         <div className="flex gap-4">
                             <a href="#" className="p-2 rounded-lg bg-white/5 text-slate-400 hover:text-white transition-colors">
@@ -51,43 +53,43 @@ export const Footer = () => {
                     </div>
 
                     <div className="md:col-span-2 md:col-start-7">
-                        <h4 className="font-bold mb-6">Ürün</h4>
+                        <h4 className="font-bold mb-6">{t('headers.product')}</h4>
                         <ul className="space-y-4 text-slate-400 text-sm">
-                            <li><a href="#features" onClick={(e) => scrollToSection(e, '#features')} className="hover:text-primary transition-colors cursor-pointer">Özellikler</a></li>
-                            <li><a href="#solutions" onClick={(e) => scrollToSection(e, '#solutions')} className="hover:text-primary transition-colors cursor-pointer">Çözümler</a></li>
-                            <li><a href="#pricing" onClick={(e) => scrollToSection(e, '#pricing')} className="hover:text-primary transition-colors cursor-pointer">Fiyatlandırma</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Yol Haritası</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Sık Sorulanlar</a></li>
+                            <li><Link href="/features" className="hover:text-primary transition-colors cursor-pointer">{t('links.features')}</Link></li>
+                            <li><a href="#solutions" onClick={(e) => scrollToSection(e, '#solutions')} className="hover:text-primary transition-colors cursor-pointer">{t('links.solutions')}</a></li>
+                            <li><a href="#pricing" onClick={(e) => scrollToSection(e, '#pricing')} className="hover:text-primary transition-colors cursor-pointer">{t('links.pricing')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('links.roadmap')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('links.faq')}</a></li>
                         </ul>
                     </div>
 
                     <div className="md:col-span-2">
-                        <h4 className="font-bold mb-6">Kurumsal</h4>
+                        <h4 className="font-bold mb-6">{t('headers.corporate')}</h4>
                         <ul className="space-y-4 text-slate-400 text-sm">
-                            <li><a href="#" className="hover:text-primary transition-colors">Hakkımızda</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Kariyer</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">İletişim</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('links.about')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('links.career')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('links.contact')}</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">{t('links.blog')}</a></li>
                         </ul>
                     </div>
 
                     <div className="md:col-span-2">
-                        <h4 className="font-bold mb-6">Yasal</h4>
+                        <h4 className="font-bold mb-6">{t('headers.legal')}</h4>
                         <ul className="space-y-4 text-slate-400 text-sm">
-                            <li><Link href="/gizlilik" className="hover:text-primary transition-colors">Gizlilik Politikası</Link></li>
-                            <li><Link href="/kullanim-sartlari" className="hover:text-primary transition-colors">Kullanım Şartları</Link></li>
-                            <li><Link href="/cerez-politikasi" className="hover:text-primary transition-colors">Çerez Politikası</Link></li>
-                            <li><Link href="/kvkk" className="hover:text-primary transition-colors">KVKK</Link></li>
+                            <li><Link href="/privacy" className="hover:text-primary transition-colors">{t('links.privacy')}</Link></li>
+                            <li><Link href="/terms" className="hover:text-primary transition-colors">{t('links.terms')}</Link></li>
+                            <li><Link href="/cookies" className="hover:text-primary transition-colors">{t('links.cookies')}</Link></li>
+                            <li><Link href="/data-protection" className="hover:text-primary transition-colors">{t('links.kvkk')}</Link></li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
                     <p className="text-slate-500 text-sm">
-                        © {new Date().getFullYear()} {APP_NAME}. Tüm hakları saklıdır.
+                        {t('copyright', { year: new Date().getFullYear(), appName: APP_NAME })}
                     </p>
                     <div className="flex items-center gap-6">
-                        <span className="text-slate-600 text-[10px] font-bold tracking-widest uppercase">Typesense, Kinde, Supabase & Next.js ile desteklenmektedir</span>
+                        <span className="text-slate-600 text-[10px] font-bold tracking-widest uppercase">{t('poweredBy')}</span>
                     </div>
                 </div>
             </div>

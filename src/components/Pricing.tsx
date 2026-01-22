@@ -17,7 +17,10 @@ const getIcon = (id: string) => {
     }
 };
 
+import { useTranslations } from 'next-intl';
+
 export const Pricing = () => {
+    const t = useTranslations('Pricing');
     const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('monthly');
     const { openDemoModal } = useModal();
 
@@ -26,15 +29,15 @@ export const Pricing = () => {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        İşinizi Büyütecek <span className="text-gradient">Esnek Planlar</span>
+                        {t('title.main')} <span className="text-gradient">{t('title.highlight')}</span>
                     </h2>
                     <p className="text-slate-400 text-lg mb-10">
-                        Her ölçekteki emlak operasyonu için optimize edilmiş abonelik seçenekleri. Şimdi başlayın, işinizle birlikte ölçekleyin.
+                        {t('description')}
                     </p>
 
                     {/* Toggle */}
                     <div className="flex items-center justify-center gap-4 mb-12">
-                        <span className={`text-sm font-medium ${billingCycle === 'monthly' ? 'text-white' : 'text-slate-500'}`}>Aylık</span>
+                        <span className={`text-sm font-medium ${billingCycle === 'monthly' ? 'text-white' : 'text-slate-500'}`}>{t('billing.monthly')}</span>
                         <button
                             onClick={() => setBillingCycle(billingCycle === 'monthly' ? 'yearly' : 'monthly')}
                             className="relative w-14 h-7 bg-slate-800 rounded-full p-1 transition-colors hover:bg-slate-700"
@@ -45,9 +48,9 @@ export const Pricing = () => {
                             />
                         </button>
                         <div className="flex items-center gap-2">
-                            <span className={`text-sm font-medium ${billingCycle === 'yearly' ? 'text-white' : 'text-slate-500'}`}>Yıllık</span>
+                            <span className={`text-sm font-medium ${billingCycle === 'yearly' ? 'text-white' : 'text-slate-500'}`}>{t('billing.yearly')}</span>
                             <span className="px-2 py-0.5 rounded-full bg-primary/20 text-primary text-[10px] font-bold">
-                                %20 İndirim
+                                {t('billing.discount')}
                             </span>
                         </div>
                     </div>
@@ -68,7 +71,7 @@ export const Pricing = () => {
                         >
                             {plan.highlight && (
                                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-primary to-secondary text-white text-[10px] font-bold tracking-widest uppercase">
-                                    En Popüler
+                                    {t('cards.popular')}
                                 </div>
                             )}
 
@@ -77,39 +80,39 @@ export const Pricing = () => {
                                     }`}>
                                     {getIcon(plan.id)}
                                 </div>
-                                <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
+                                <h3 className="text-xl font-bold mb-2">{t(`plans.${plan.id}.name`)}</h3>
                                 <p className="text-slate-400 text-sm leading-relaxed mb-6 h-12">
-                                    {plan.description}
+                                    {t(`plans.${plan.id}.description`)}
                                 </p>
                                 <div className="flex items-baseline gap-1">
                                     <span className="text-3xl font-bold">
-                                        Bilgi Al!
+                                        {t('cards.info')}
                                     </span>
                                 </div>
                                 <p className="text-xs text-slate-500 mt-2">
-                                    {plan.users} için ideal
+                                    {t('cards.idealFor', { users: t(`plans.${plan.id}.users`) })}
                                 </p>
                             </div>
 
                             <div className="space-y-4 mb-8 flex-grow">
-                                <div className="text-xs font-bold text-slate-500 uppercase tracking-widest">Limitler</div>
+                                <div className="text-xs font-bold text-slate-500 uppercase tracking-widest">{t('cards.limits')}</div>
                                 <ul className="space-y-3">
                                     <li className="flex items-center gap-3 text-sm text-slate-300">
                                         <Check size={14} className="text-primary flex-shrink-0" />
-                                        <span>{plan.limits.properties} Portföy</span>
+                                        <span>{t('cards.properties', { count: plan.limits.properties })}</span>
                                     </li>
                                     <li className="flex items-center gap-3 text-sm text-slate-300">
                                         <Check size={14} className="text-primary flex-shrink-0" />
-                                        <span>{plan.limits.aiCredits} AI Kredisi</span>
+                                        <span>{t('cards.aiCredits', { count: plan.limits.aiCredits })}</span>
                                     </li>
                                 </ul>
 
-                                <div className="text-xs font-bold text-slate-500 uppercase tracking-widest pt-4">Özellikler</div>
+                                <div className="text-xs font-bold text-slate-500 uppercase tracking-widest pt-4">{t('cards.features')}</div>
                                 <ul className="space-y-3">
-                                    {plan.features.slice(0, 4).map((feature, i) => (
+                                    {[0, 1, 2, 3].map((i) => (
                                         <li key={i} className="flex items-start gap-3 text-sm text-slate-300">
                                             <Check size={14} className="text-primary mt-1 flex-shrink-0" />
-                                            <span>{feature}</span>
+                                            <span>{t(`plans.${plan.id}.features.${i}`)}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -121,7 +124,7 @@ export const Pricing = () => {
                                     ? 'bg-primary text-white hover:bg-primary/90 shadow-lg shadow-primary/25'
                                     : 'bg-white/5 border border-white/10 hover:bg-white/10 text-white'
                                     }`}>
-                                {plan.id === 'enterprise' ? 'Bize Ulaşın' : 'Hemen Başlayın'}
+                                {plan.id === 'enterprise' ? t('cards.contact') : t('cards.start')}
                             </button>
                         </motion.div>
                     ))}
@@ -131,6 +134,6 @@ export const Pricing = () => {
             {/* Background Accents */}
             <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/5 blur-[120px] rounded-full pointer-events-none" />
-        </section>
+        </section >
     );
 };

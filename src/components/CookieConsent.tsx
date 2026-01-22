@@ -126,7 +126,7 @@ export const CookieConsent = () => {
                                         Son Güncelleme: 22/01/2026
                                     </p>
                                     <p>
-                                        {APP_NAME} ("Şirket") olarak, web sitemizi ve uygulamalarımızı ziyaretiniz sırasında deneyiminizi geliştirmek, hizmetlerimizi optimize etmek ve güvenliğinizi sağlamak amacıyla çerezler (cookies) kullanmaktayız.
+                                        {APP_NAME} (&quot;Şirket&quot;) olarak, web sitemizi ve uygulamalarımızı ziyaretiniz sırasında deneyiminizi geliştirmek, hizmetlerimizi optimize etmek ve güvenliğinizi sağlamak amacıyla çerezler (cookies) kullanmaktayız.
                                     </p>
                                     <div className="space-y-4">
                                         <h4 className="font-bold text-white">1. Çerez Nedir?</h4>
