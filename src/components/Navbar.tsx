@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Link } from '@/i18n/routing';
+import { Link, useRouter } from '@/i18n/routing';
 import { motion } from 'framer-motion';
 import { APP_NAME, NAV_LINKS } from '@/constants/config';
 import { cn } from '@/lib/utils';
@@ -12,6 +12,8 @@ import { LanguageSwitcher } from './LanguageSwitcher';
 
 export const Navbar = () => {
     const t = useTranslations('Navbar');
+    const router = useRouter();
+
     const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
         const id = href.replace('#', '');
@@ -27,6 +29,9 @@ export const Navbar = () => {
                 top: offsetPosition,
                 behavior: 'smooth'
             });
+        } else {
+            // If element is not found (e.g. we are on a legal page), navigate to home with hash
+            router.push(`/${href}`);
         }
     };
     const { openDemoModal } = useModal();
