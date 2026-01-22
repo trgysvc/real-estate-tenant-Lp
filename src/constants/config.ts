@@ -10,7 +10,7 @@ export const COLORS = {
 };
 
 export const NAV_LINKS = [
-  { id: "features", href: "/features" },
+  { id: "features", href: "#features" },
   { id: "solutions", href: "#solutions" },
   { id: "pricing", href: "#pricing" },
   { id: "contact", href: "#contact" },

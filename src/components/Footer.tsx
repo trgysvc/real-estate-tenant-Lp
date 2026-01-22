@@ -55,7 +55,7 @@ export const Footer = () => {
                     <div className="md:col-span-2 md:col-start-7">
                         <h4 className="font-bold mb-6">{t('headers.product')}</h4>
                         <ul className="space-y-4 text-slate-400 text-sm">
-                            <li><Link href="/features" className="hover:text-primary transition-colors cursor-pointer">{t('links.features')}</Link></li>
+                            <li><a href="#features" onClick={(e) => scrollToSection(e, '#features')} className="hover:text-primary transition-colors cursor-pointer">{t('links.features')}</a></li>
                             <li><a href="#solutions" onClick={(e) => scrollToSection(e, '#solutions')} className="hover:text-primary transition-colors cursor-pointer">{t('links.solutions')}</a></li>
                             <li><a href="#pricing" onClick={(e) => scrollToSection(e, '#pricing')} className="hover:text-primary transition-colors cursor-pointer">{t('links.pricing')}</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">{t('links.roadmap')}</a></li>
