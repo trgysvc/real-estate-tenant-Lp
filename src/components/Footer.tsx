@@ -1,8 +1,28 @@
+"use client";
 import React from 'react';
+import { Link } from '@/i18n/routing';
 import { APP_NAME } from '@/constants/config';
 import { Building2, Github, Twitter, Linkedin } from 'lucide-react';
 
 export const Footer = () => {
+    const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        const id = href.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+            const offset = 80; // match navbar offset
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const elementRect = element.getBoundingClientRect().top;
+            const elementPosition = elementRect - bodyRect;
+            const offsetPosition = elementPosition - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     return (
         <footer className="bg-slate-950 border-t border-white/5 pt-20 pb-10">
             <div className="container mx-auto px-6">
@@ -33,8 +53,9 @@ export const Footer = () => {
                     <div className="md:col-span-2 md:col-start-7">
                         <h4 className="font-bold mb-6">Ürün</h4>
                         <ul className="space-y-4 text-slate-400 text-sm">
-                            <li><a href="#features" className="hover:text-primary transition-colors">Özellikler</a></li>
-                            <li><a href="#solutions" className="hover:text-primary transition-colors">Çözümler</a></li>
+                            <li><a href="#features" onClick={(e) => scrollToSection(e, '#features')} className="hover:text-primary transition-colors cursor-pointer">Özellikler</a></li>
+                            <li><a href="#solutions" onClick={(e) => scrollToSection(e, '#solutions')} className="hover:text-primary transition-colors cursor-pointer">Çözümler</a></li>
+                            <li><a href="#pricing" onClick={(e) => scrollToSection(e, '#pricing')} className="hover:text-primary transition-colors cursor-pointer">Fiyatlandırma</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">Yol Haritası</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">Sık Sorulanlar</a></li>
                         </ul>
@@ -53,10 +74,10 @@ export const Footer = () => {
                     <div className="md:col-span-2">
                         <h4 className="font-bold mb-6">Yasal</h4>
                         <ul className="space-y-4 text-slate-400 text-sm">
-                            <li><a href="#" className="hover:text-primary transition-colors">Gizlilik Politikası</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Kullanım Şartları</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Çerez Politikası</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">KVKK</a></li>
+                            <li><Link href="/gizlilik" className="hover:text-primary transition-colors">Gizlilik Politikası</Link></li>
+                            <li><Link href="/kullanim-sartlari" className="hover:text-primary transition-colors">Kullanım Şartları</Link></li>
+                            <li><Link href="/cerez-politikasi" className="hover:text-primary transition-colors">Çerez Politikası</Link></li>
+                            <li><Link href="/kvkk" className="hover:text-primary transition-colors">KVKK</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -66,7 +87,7 @@ export const Footer = () => {
                         © {new Date().getFullYear()} {APP_NAME}. Tüm hakları saklıdır.
                     </p>
                     <div className="flex items-center gap-6">
-                        <span className="text-slate-600 text-[10px] font-bold tracking-widest uppercase">Powered by Typesense, Kinde, Supabase & Next.js</span>
+                        <span className="text-slate-600 text-[10px] font-bold tracking-widest uppercase">Typesense, Kinde, Supabase & Next.js ile desteklenmektedir</span>
                     </div>
                 </div>
             </div>

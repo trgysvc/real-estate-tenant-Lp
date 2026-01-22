@@ -1,5 +1,5 @@
-export const APP_NAME = "Propulse";
-export const APP_DESCRIPTION = "The AI-Powered Operating System for Modern Real Estate.";
+export const APP_NAME = "Investory CRM";
+export const APP_DESCRIPTION = "Modern Gayrimenkul İçin Yapay Zeka Destekli İşletim Sistemi.";
 
 export const COLORS = {
   primary: "#6366f1", // Deep Indigo
@@ -10,10 +10,10 @@ export const COLORS = {
 };
 
 export const NAV_LINKS = [
-  { label: "Features", href: "#features" },
-  { label: "Solutions", href: "#solutions" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Contact", href: "#contact" },
+  { label: "Özellikler", href: "#features" },
+  { label: "Çözümler", href: "#solutions" },
+  { label: "Fiyatlandırma", href: "#pricing" },
+  { label: "İletişim", href: "#contact" },
 ];
 
 export const TECHNICAL_BENEFITS = [

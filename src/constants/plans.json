@@ -1,0 +1,135 @@
+{
+    "currency": "₺",
+    "billingCycles": [
+        {
+            "id": "monthly",
+            "label": "Aylık"
+        },
+        {
+            "id": "yearly",
+            "label": "Yıllık",
+            "discount": "%20 İndirim"
+        }
+    ],
+    "plans": [
+        {
+            "id": "individual-lite",
+            "name": "Bireysel (Lite)",
+            "description": "Yeni başlayan bağımsız danışmanlar için temel araçlar.",
+            "price": {
+                "monthly": 499,
+                "yearly": 399
+            },
+            "users": 1,
+            "limits": {
+                "properties": 20,
+                "photoStorage": "500MB",
+                "customerRecords": 100,
+                "aiCredits": 50
+            },
+            "features": [
+                "Temel Portföy Yönetimi",
+                "Dijital Kartvizit",
+                "E-posta Desteği",
+                "Yapay Zeka İlan Sihirbazı (Sınırlı)"
+            ],
+            "target": "Bağımsız Danışmanlar"
+        },
+        {
+            "id": "individual-pro",
+            "name": "Bireysel (Pro)",
+            "description": "Yüksek portföy hacmine sahip, hız odaklı profesyoneller için.",
+            "price": {
+                "monthly": 999,
+                "yearly": 799
+            },
+            "users": 1,
+            "limits": {
+                "properties": 200,
+                "photoStorage": "10GB",
+                "customerRecords": 2000,
+                "aiCredits": 500
+            },
+            "features": [
+                "Gelişmiş Otomasyon Araçları",
+                "Öncelikli Teknik Destek",
+                "Profesyonel Raporlama",
+                "Yapay Zeka Destekli Müşteri Eşleştirme",
+                "Özel Web Sitesi Entegrasyonu"
+            ],
+            "highlight": true,
+            "target": "Top-Performer Danışmanlar"
+        },
+        {
+            "id": "professional-lite",
+            "name": "Profesyonel (Lite)",
+            "description": "Küçük ekipler için iş birliği ve hiyerarşi odaklı başlangıç.",
+            "price": {
+                "monthly": 1999,
+                "yearly": 1599
+            },
+            "users": "5 Kullanıcı",
+            "limits": {
+                "properties": 100,
+                "photoStorage": "5GB",
+                "customerRecords": 1000,
+                "aiCredits": 300
+            },
+            "features": [
+                "Ekip Yönetimi ve Hiyerarşi",
+                "Asistan-Danışman Yetkilendirme",
+                "Ortak Havuz Portföy Erişimi",
+                "Temel Ofis İçi Mesajlaşma"
+            ],
+            "target": "Butik Ofisler"
+        },
+        {
+            "id": "professional-pro",
+            "name": "Profesyonel (Pro)",
+            "description": "Orta ölçekli ofisler için tam kapasite ekip koordinasyonu.",
+            "price": {
+                "monthly": 4999,
+                "yearly": 3999
+            },
+            "users": "15 Kullanıcı",
+            "limits": {
+                "properties": 1000,
+                "photoStorage": "50GB",
+                "customerRecords": 10000,
+                "aiCredits": 2000
+            },
+            "features": [
+                "Gelişmiş Ekip Performans Analizi",
+                "Gelişmiş Hiyerarşik Yetkilendirme",
+                "Görüntülü Görüşme Entegrasyonu",
+                "API Erişimi (Okuma)",
+                "Gelişmiş Raporlama Paneli"
+            ],
+            "target": "Büyüyen Emlak Ofisleri"
+        },
+        {
+            "id": "enterprise",
+            "name": "Kurumsal (Enterprise)",
+            "description": "Büyük emlak zincirleri için ölçeklenebilir ve güvenli çözüm.",
+            "price": {
+                "monthly": "Özel",
+                "yearly": "Özel"
+            },
+            "users": "Sınırsız",
+            "limits": {
+                "properties": "Sınırsız",
+                "photoStorage": "500GB+",
+                "customerRecords": "Sınırsız",
+                "aiCredits": "Özel"
+            },
+            "features": [
+                "Veri İzolasyonu (Private DB)",
+                "Özel Şifreleme Anahtarları",
+                "Full API Desteği & Webhook",
+                "Özel SLA Taahhüdü",
+                "Şube Bazlı Organizasyon"
+            ],
+            "target": "Emlak Zincirleri"
+        }
+    ]
+}

@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Sparkles, Zap, ChevronRight } from 'lucide-react';
 
 const MOCK_RESULTS = [
-    { id: 1, title: "Modern Luxury Villa", price: "$2,450,000", location: "Beverly Hills" },
-    { id: 2, title: "Skyline Penthouse", price: "$1,890,000", location: "Manhattan" },
-    { id: 3, title: "Oceanfront Estate", price: "$4,200,000", location: "Miami" },
+    { id: 1, title: "Modern Lüks Villa", price: "2.450.000 TL", location: "Beverly Hills" },
+    { id: 2, title: "Modern Penthouse", price: "1.890.000 TL", location: "Manhattan" },
+    { id: 3, title: "Deniz Manzaralı Malikane", price: "4.200.000 TL", location: "Miami" },
 ];
 
 export const Hero = () => {
@@ -27,7 +27,7 @@ export const Hero = () => {
                 >
                     <span className="px-4 py-1.5 rounded-full border border-primary/20 bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-6 inline-block">
                         <Sparkles className="w-3 h-3 inline-block mr-2 -mt-0.5" />
-                        Next-Gen Real Estate OS
+                        Yeni Nesil Gayrimenkul İşletim Sistemi
                     </span>
                     <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]">
                         Modern Gayrimenkul İçin <br />
