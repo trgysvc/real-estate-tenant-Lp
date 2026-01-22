@@ -1,24 +1,27 @@
-# Investory CRM - Gayrimenkul İşletim Sistemi
+# Investrong CRM - Gayrimenkul İşletim Sistemi
 
-**Investory CRM**, modern gayrimenkul profesyonelleri için tasarlanmış, yapay zeka destekli bir gayrimenkul yönetim platformudur. Bu proje, platformun tanıtımını yapan, potansiyel müşterilerden talep toplayan ve ürün özelliklerini sergileyen "Landing Page" (Açılış Sayfası) arayüzüdür.
+**Investrong CRM**, modern gayrimenkul profesyonelleri için tasarlanmış, yapay zeka destekli bir gayrimenkul yönetim platformudur. Bu proje, platformun tanıtımını yapan, potansiyel müşterilerden talep toplayan ve ürün özelliklerini sergileyen "Landing Page" (Açılış Sayfası) arayüzüdür.
 
 ## 🎯 Projenin Amacı
 
-Bu projenin temel amacı, klasik emlak yönetim araçlarının ötesine geçerek; hız, güvenlik ve yapay zeka teknolojilerini tek bir çatı altında sunan **Investory CRM**'in dijital vitrinini oluşturmaktır.
+Bu projenin temel amacı, klasik emlak yönetim araçlarının ötesine geçerek; hız, güvenlik ve yapay zeka teknolojilerini tek bir çatı altında sunan **Investrong CRM**'in dijital vitrinini oluşturmaktır.
 
 Ziyaretçilere şu imkanları sunar:
-- Ürünün yapay zeka tabanlı özelliklerini keşfetme.
-- Farklı ölçekteki işletmeler için (Bireysel, Profesyonel, Kurumsal) abonelik paketlerini inceleme.
-- Hukuki süreçler (KVKK, Gizlilik Politikası, Kullanım Şartları) hakkında şeffaf bilgi alma.
-- **Demo ve Ücretsiz Deneme** taleplerini hızlıca iletme.
+- **Detaylı Özellik Keşfi:** Dinamik modallar ve derin linkleme (`/features?item=...`) ile ürün özelliklerini detaylı inceleme.
+- **Yapay Zeka Entegrasyonları:** Multi-agent mimarisi ve Typesense arama altyapısı hakkında bilgi alma.
+- **Farklı Ölçekler İçin Çözümler:** Bireysel, Profesyonel ve Kurumsal abonelik paketlerini karşılaştırma.
+- **Hukuki Şeffaflık:** Global standartlarda oluşturulmuş gizlilik ve kullanım sayfaları (`/privacy`, `/terms`, `/data-protection`).
+- **Demo ve Ücretsiz Deneme:** Hızlı demo formu ile talep oluşturma.
 
 ## 🚀 Öne Çıkan Özellikler
 
 *   **Modern & Premium Tasarım:** "Glassmorphism" efektleri, canlı gradyanlar ve akıcı animasyonlarla zenginleştirilmiş kullanıcı deneyimi.
-*   **Çoklu Dil Desteği (i18n):** Türkçe ve İngilizce dil seçenekleri ile global erişim (`next-intl` altyapısı).
+*   **Çoklu Dil Desteği (i18n):** Türkçe ve İngilizce dil seçenekleri ile global erişim.
+*   **Standartlaştırılmış Rotalar:** Global uyumluluk için İngilizce rota yapısı (`/privacy`, `/terms`, `/cookies`, `/data-protection`).
+*   **Özellik Detay Modalları:** Sayfa yenilemeden çalışan, URL parametresi tabanlı (`?item=key`) detay pencereleri.
 *   **Dinamik Fiyatlandırma:** Aylık ve Yıllık ödeme planları arasında geçiş yapılabilen interaktif fiyatlandırma tablosu.
-*   **Lead Toplama Sistemi:** Ziyaretçi bilgilerini (Ad, İletişim, Firma) toplayan ve **Google Sheets**'e otomatik kaydeden entegre modal yapısı.
-*   **Hukuki Altyapı:** KVKK, Gizlilik Politikası, Çerez Politikası ve Kullanım Şartları sayfaları tam uyumlu şekilde hazırlanmıştır.
+*   **Lead Toplama Sistemi:** Ziyaretçi bilgilerini toplayan ve backend'e ileten modal yapısı.
+*   **SEO ve Performans:** Next.js App Router, Metadata API ve semantik HTML yapısı.
 *   **Responsive Yapı:** Mobil, tablet ve masaüstü cihazlarda kusursuz görünüm.
 
 ## 🛠️ Kullanılan Teknolojiler
