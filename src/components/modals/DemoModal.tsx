@@ -28,12 +28,30 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
         setIsSubmitting(true);
 
         try {
+            // Fetch IP Address
+            let ipAddress = 'Unknown';
+            try {
+                const ipResponse = await fetch('https://api.ipify.org?format=json');
+                if (ipResponse.ok) {
+                    const ipData = await ipResponse.json();
+                    ipAddress = ipData.ip;
+                }
+            } catch (err) {
+                console.error('Failed to fetch IP:', err);
+            }
+
+            const submissionData = {
+                ...formData,
+                ip: ipAddress,
+                timestamp: new Date().toISOString()
+            };
+
             const response = await fetch('/api/submit-demo', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(formData),
+                body: JSON.stringify(submissionData),
             });
 
             if (!response.ok) {

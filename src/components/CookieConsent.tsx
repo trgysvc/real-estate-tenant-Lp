@@ -147,7 +147,7 @@ export const CookieConsent = () => {
                                     <div className="p-4 rounded-2xl bg-primary/5 border border-primary/10 flex items-center justify-between">
                                         <span className="text-xs text-primary font-medium">Tam metin için politikayı görüntüleyin:</span>
                                         <Link
-                                            href="/cerez-politikasi"
+                                            href="/cookies"
                                             onClick={() => setShowModal(false)}
                                             className="flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
                                         >

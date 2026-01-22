@@ -4,7 +4,7 @@ import { google } from 'googleapis';
 export async function POST(req: NextRequest) {
     try {
         const body = await req.json();
-        const { fullName, email, phone, companyName, selectedPlan } = body;
+        const { fullName, email, phone, companyName, selectedPlan, ip, timestamp } = body;
 
         // Basic validation
         if (!fullName || !email || !phone || !companyName) {
@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
 
         const response = await sheets.spreadsheets.values.append({
             spreadsheetId: process.env.GOOGLE_SHEET_ID,
-            range: 'A:E', // Assuming columns A to E
+            range: 'A:G', // Updated range to accommodate extra fields
             valueInputOption: 'USER_ENTERED',
             requestBody: {
                 values: [
@@ -49,7 +49,8 @@ export async function POST(req: NextRequest) {
                         phone,
                         companyName,
                         selectedPlan,
-                        new Date().toISOString() // Timestamp
+                        ip || 'Not Captured',
+                        timestamp || new Date().toISOString()
                     ]
                 ],
             },

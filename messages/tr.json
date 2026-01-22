@@ -176,7 +176,7 @@
             "plan": "Tercih Edilen Paket"
         },
         "submit": "Demo Talebi Gönder",
-        "legal": "Gönder butonuna basarak {link} uyarınca verilerinizin işlenmesini kabul etmiş sayılırsınız.",
+        "legal": "Gönder butonuna basarak <link>Aydınlatma Metni</link> uyarınca verilerinizin işlenmesini kabul etmiş sayılırsınız.",
         "legalLink": "Aydınlatma Metni",
         "success": {
             "title": "Harika!",
