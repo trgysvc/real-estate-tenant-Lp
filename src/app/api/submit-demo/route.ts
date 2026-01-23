@@ -23,10 +23,22 @@ export async function POST(req: NextRequest) {
             );
         }
 
+        // Sanitize sensitive keys (handles base64 newlines and potential wrapping quotes)
+        const getPrivateKey = (key: string | undefined) => {
+            if (!key) return undefined;
+            // Handle literal \n (common in environment variables)
+            let formatted = key.replace(/\\n/g, '\n');
+            // Remove quotes if the user copied them into the env var value
+            if (formatted.startsWith('"') && formatted.endsWith('"')) {
+                formatted = formatted.slice(1, -1);
+            }
+            return formatted;
+        };
+
         const auth = new google.auth.GoogleAuth({
             credentials: {
                 client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-                private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+                private_key: getPrivateKey(process.env.GOOGLE_PRIVATE_KEY),
             },
             scopes: [
                 'https://www.googleapis.com/auth/drive',
