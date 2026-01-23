@@ -26,12 +26,35 @@ export async function POST(req: NextRequest) {
         // Sanitize sensitive keys (handles base64 newlines and potential wrapping quotes)
         const getPrivateKey = (key: string | undefined) => {
             if (!key) return undefined;
-            // Handle literal \n (common in environment variables)
-            let formatted = key.replace(/\\n/g, '\n');
-            // Remove quotes if the user copied them into the env var value
+
+            // Safe debug logging to identify format issues without leaking the full key
+            console.log(`Key Debug - Length: ${key.length}, Start: ${key.substring(0, 15)}...`);
+
+            try {
+                // If the key is wrapped in quotes, it might be a JSON string escape (common in some envs)
+                if (key.trim().startsWith('"')) {
+                    const parsed = JSON.parse(key);
+                    console.log('Key parsed as JSON string');
+                    return parsed;
+                }
+            } catch (e) {
+                // Ignore JSON parse error and fall back to manual replacement
+                console.log('Key is not a valid JSON string, proceeding with manual sanitization');
+            }
+
+            // Manual sanitization
+            let formatted = key;
+
+            // Replace literal \n or \\n with actual newlines
+            if (formatted.includes('\\n')) {
+                formatted = formatted.replace(/\\n/g, '\n');
+            }
+
+            // Remove wrapping quotes if they persist
             if (formatted.startsWith('"') && formatted.endsWith('"')) {
                 formatted = formatted.slice(1, -1);
             }
+
             return formatted;
         };
 
