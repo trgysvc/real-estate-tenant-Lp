@@ -55,7 +55,9 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
             });
 
             if (!response.ok) {
-                throw new Error('Bir hata oluştu');
+                const errorData = await response.json().catch(() => ({}));
+                console.error('Server Error Detail:', errorData);
+                throw new Error(errorData.error || 'Bir hata oluştu');
             }
 
             setIsSubmitting(false);
