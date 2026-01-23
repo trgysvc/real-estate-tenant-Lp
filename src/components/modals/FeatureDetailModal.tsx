@@ -79,9 +79,7 @@ export const FeatureDetailModal = () => {
                         </div>
 
                         <div className="p-8 md:p-10">
-                            <div className="inline-block px-3 py-1 rounded-full border border-primary/20 bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-4">
-                                {t(`items.${itemKey}.tech`)}
-                            </div>
+
 
                             <h2 className="text-3xl font-bold text-white mb-6">
                                 {t(`items.${itemKey}.title`)}

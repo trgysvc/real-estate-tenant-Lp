@@ -1,6 +1,6 @@
 {
     "HomePage": {
-        "title": "Investrong CRM - Modern Gayrimenkul İçin Yapay Zeka Destekli İşletim Sistemi"
+        "title": "Investrong CRM - Gayrimenkul İçin Modern Yapay Zeka Destekli İşletim Sistemi"
     },
     "Navbar": {
         "links": {
@@ -41,7 +41,7 @@
     "Hero": {
         "badge": "Yeni Nesil Gayrimenkul İşletim Sistemi",
         "title": {
-            "main": "Modern Gayrimenkul İçin",
+            "main": "Gayrimenkul İçin Modern",
             "highlight": "Yapay Zeka Destekli",
             "suffix": "İşletim Sistemi"
         },
@@ -355,25 +355,25 @@
         "items": {
             "high-speed-search": {
                 "title": "Milisaniyeler Süren Akıllı Arama",
-                "description": "Typesense in-memory teknolojisiyle 0.2ms hızında arama deneyimi. Yazım hatalarını tolere eden, anlık filtrelenebilir ilan listeleme sistemiyle müşterilerinize bekletmeden cevap verin.",
+                "description": "Arama motorumuz, veriyi saniyeler değil milisaniyeler bazında işleyen özel bir indeksleme mimarisi kullanır. Karmaşık ve binlerce veriden oluşan portföyünüzde bile, siz daha kelimenizi bitirmeden en doğru sonuçları karşınıza getirir. Yazım hatalarını anında analiz eder ve aradığınız mülke ulaşmanızı engelleyen tüm dijital bariyerleri ortadan kaldırır.",
                 "tech": "Typesense",
                 "icon": "Search"
             },
             "enterprise-security": {
                 "title": "Banka Düzeyinde Veri Koruması",
-                "description": "Kinde kimlik doğrulama ve Stripe ödeme altyapısıyla uçtan uca güvenlik. Verileriniz AES-256 standartlarında şifrelenir ve kurumsal paketlerde tamamen izole veritabanlarında saklanır.",
+                "description": "Veri güvenliğiniz, küresel finans kuruluşlarının kullandığı en yüksek güvenlik protokolleriyle korunmaktadır. Her bir veri katmanı, yetkisiz erişimi imkansız kılan çok katmanlı bir şifreleme döngüsünden geçer. Verileriniz sadece sizin erişiminiz için dijital bir kilit altında tutulur ve 7/24 proaktif güvenlik duvarları tarafından izlenir.",
                 "tech": "Kinde / Stripe",
                 "icon": "ShieldCheck"
             },
             "ai-assistant": {
                 "title": "Yapay Zeka Destekli Operasyon Merkezi",
-                "description": "Antigravity multi-agent mimarisiyle ilan açıklamalarınızı otomatik oluşturun, müşteri taleplerini mülklerle saniyeler içinde eşleştirin ve manuel veri girişini %80 oranında azaltın.",
+                "description": "Dijital operasyon merkeziniz, bir yazılımdan daha fazlasıdır; sizin için çalışan akıllı bir yardımcıdır. Sisteme girilen ham verileri analiz ederek profesyonel pazarlama metinlerine dönüştürür. Müşteri beklentileri ile mülk özelliklerini derinlemesine eşleştirerek, portföyünüzdeki en doğru fırsatları saniyeler içinde tespit eder ve size raporlar.",
                 "tech": "Multi-Agent AI",
                 "icon": "Zap"
             },
             "global-infrastructure": {
                 "title": "Kesintisiz Global Performans",
-                "description": "Nvidia donanımlarıyla güçlendirilmiş GPU tabanlı sunucular ve %99.9 uptime garantisi. Dünyanın her yerinden, her cihazla ofisinize anında erişin.",
+                "description": "Yüksek performanslı donanım parkurumuz ve küresel sunucu ağımız, en yoğun trafik anlarında bile platformun takılmadan çalışmasını sağlar. %99.9 erişilebilirlik garantisiyle, işiniz dünyanın neresinde olursanız olun cebinizdedir. Ofisinizdeki masaüstü bilgisayardan sahadaki mobil cihazınıza kadar tüm deneyim pürüzsüz ve hızlıdır.",
                 "tech": "Next.js / Supabase",
                 "icon": "Globe"
             }

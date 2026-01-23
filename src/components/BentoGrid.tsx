@@ -83,9 +83,7 @@ export const BentoGrid = () => {
                                         <div className="p-4 rounded-2xl bg-slate-800 text-primary group-hover:scale-110 transition-transform duration-500">
                                             <Icon size={32} />
                                         </div>
-                                        <span className="text-[10px] font-bold tracking-widest uppercase py-1 px-3 rounded-full border border-slate-700 text-slate-500">
-                                            {t(`items.${key}.tech`)}
-                                        </span>
+
                                     </div>
 
                                     <div>

@@ -355,25 +355,25 @@
         "items": {
             "high-speed-search": {
                 "title": "Millisecond-Fast Intelligent Search",
-                "description": "Experience 0.2ms search speeds powered by Typesense in-memory technology. Provide instant answers to your clients with typo-tolerant, real-time filterable listing systems—zero waiting time.",
+                "description": "Our search engine uses a specialized indexing architecture that processes data in milliseconds, not seconds. Even with a complex portfolio consisting of thousands of entries, it brings you the most accurate results before you even finish typing. It instantly analyzes typos and eliminates all digital barriers preventing you from reaching the property you are looking for.",
                 "tech": "Typesense",
                 "icon": "Search"
             },
             "enterprise-security": {
                 "title": "Bank-Grade Data Protection",
-                "description": "End-to-end security with Kinde authentication and Stripe payment infrastructure. Your data is encrypted using AES-256 standards, with dedicated database isolation available for Enterprise plans.",
+                "description": "Your data security is protected by the highest security protocols used by global financial institutions. Each data layer passes through a multi-layered encryption cycle that makes unauthorized access impossible. Your data is kept under a digital lock accessible only by you and monitored by 24/7 proactive firewalls.",
                 "tech": "Kinde / Stripe",
                 "icon": "ShieldCheck"
             },
             "ai-assistant": {
                 "title": "AI-Powered Operations Center",
-                "description": "Automatically generate property descriptions and match client requests with properties in seconds using Antigravity’s multi-agent architecture. Reduce manual data entry by 80% and focus on closing deals.",
+                "description": "Your digital operation center is more than just software; it is a smart assistant working for you. It analyzes raw data entered into the system and transforms it into professional marketing texts. By deeply matching customer expectations with property features, it identifies the most accurate opportunities in your portfolio within seconds and reports them to you.",
                 "tech": "Multi-Agent AI",
                 "icon": "Zap"
             },
             "global-infrastructure": {
                 "title": "Seamless Global Performance",
-                "description": "Powered by Nvidia hardware and GPU-based servers with a 99.9% uptime guarantee. Access your office instantly from anywhere in the world, on any device, with no performance compromises.",
+                "description": "Our high-performance hardware fleet and global server network ensure the platform runs without glitches even during peak traffic moments. With a 99.9% availability guarantee, your business is in your pocket wherever you are in the world. From the desktop in your office to your mobile device in the field, the entire experience is smooth and fast.",
                 "tech": "Next.js / Supabase",
                 "icon": "Globe"
             }

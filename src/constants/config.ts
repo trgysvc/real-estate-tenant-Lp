@@ -1,5 +1,5 @@
 export const APP_NAME = "Investrong CRM";
-export const APP_DESCRIPTION = "Modern Gayrimenkul İçin Yapay Zeka Destekli İşletim Sistemi.";
+export const APP_DESCRIPTION = "Gayrimenkul İçin Modern Yapay Zeka Destekli İşletim Sistemi.";
 
 export const COLORS = {
   primary: "#6366f1", // Deep Indigo
