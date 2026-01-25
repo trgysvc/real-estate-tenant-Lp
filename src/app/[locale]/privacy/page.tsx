@@ -87,6 +87,18 @@ export default function PrivacyPolicy() {
                                 })}
                             </p>
                         </section>
+
+                        <section>
+                            <h2 className="text-2xl font-bold text-white mb-4">{t('sections.6.title')}</h2>
+                            <p className="mb-4">{t('sections.6.content')}</p>
+                            <ul className="list-disc pl-6 space-y-2">
+                                {[0, 1, 2].map((i) => (
+                                    <li key={i}>{t.rich(`sections.6.items.${i}`, {
+                                        bold: (chunks) => <span className="text-white font-medium">{chunks}</span>
+                                    })}</li>
+                                ))}
+                            </ul>
+                        </section>
                     </div>
                 </div>
             </div>

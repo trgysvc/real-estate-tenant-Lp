@@ -97,6 +97,23 @@ export default function TermsOfServicePage() {
                             <h2 className="text-2xl font-bold text-white mb-4">{t("sections.8.title")}</h2>
                             <p>{t("sections.8.content")}</p>
                         </section>
+
+                        <section>
+                            <h2 className="text-2xl font-bold text-white mb-4">{t("sections.9.title")}</h2>
+                            <div className="space-y-4">
+                                <p>{t("sections.9.content")}</p>
+                                <ul className="list-disc pl-6 space-y-2">
+                                    {[0, 1].map((i) => (
+                                        <li key={i}>
+                                            {t.rich(`sections.9.items.${i}`, {
+                                                bold: (chunks) => <span className="text-white font-medium">{chunks}</span>,
+                                                appName: APP_NAME,
+                                            })}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>

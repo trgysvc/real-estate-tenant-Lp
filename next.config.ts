@@ -5,7 +5,7 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
   output: 'standalone',
-  /* config options here */
+  serverExternalPackages: ['better-sqlite3'],
 };
 
 export default withNextIntl(nextConfig);

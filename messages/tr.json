@@ -255,6 +255,15 @@
             "5": {
                 "title": "5. Kullanıcı Hakları",
                 "content": "Kullanıcılar; verilerine erişme, düzeltme, silme (unutulma hakkı) ve veri işleme faaliyetine itiraz etme hakkına sahiptir. Bu talepleriniz için <link>support@tukanft.com</link> adresi üzerinden bizimle iletişime geçebilirsiniz."
+            },
+            "6": {
+                "title": "6. Kurumsal Veri İşleme",
+                "content": "Kurumsal paket kullanıcıları için özel veri güvenliği önlemleri uygulanmaktadır.",
+                "items": [
+                    "<bold>Kurumsal Veri İzolasyonu:</bold> Kurumsal (Enterprise) paket kullanıcıları için veriler, paylaşımlı altyapıdan izole edilmiş özel veritabanı şemalarında barındırılır.",
+                    "<bold>Özel Şifreleme Anahtarları (BYOK):</bold> Kurumsal müşteriler, hassas verilerin şifrelenmesinde kendi yönetimlerindeki anahtarların kullanılmasını talep edebilirler.",
+                    "<bold>Erişim Denetimi:</bold> Kurumsal veritabanlarına erişim, sadece yetkilendirilmiş sistem yöneticileri ile sınırlıdır ve her erişim kayıt altına alınır."
+                ]
             }
         }
     },
@@ -273,11 +282,11 @@
             },
             "3": {
                 "title": "3. Abonelik Paketleri ve Ödeme",
-                "content": "Kullanıcı, seçtiği paketin (Bireysel Lite/Pro, Profesyonel Lite/Pro, Kurumsal) teknik limitlerini (ilan sayısı, kullanıcı sayısı vb.) kabul eder. Ücretler, seçilen faturalandırma dönemine (aylık/yıllık) göre dönem başında tahsil edilir.",
+                "content": "Kullanıcı, seçtiği abonelik paketinin (Bireysel Lite/Pro, Profesyonel Lite/Pro, Kurumsal) teknik limitlerini ve özelliklerini kabul eder. Ücretler, seçilen faturalandırma dönemine (aylık/yıllık) göre dönem başında tahsil edilir.",
                 "items": [
-                    "<bold>Yükseltme (Upgrade):</bold> Dilediğiniz zaman üst pakete geçebilirsiniz. Mevcut bakiyeniz yeni paketten mahsup edilir.",
-                    "<bold>Düşürme (Downgrade):</bold> Paket düşürme işlemleri dönem sonunda aktifleşir. Dönem ortası iade yapılmaz.",
-                    "<bold>Teknik Limit Aşımı:</bold> Limitlerin aşılması durumunda sistem uyarı verir. Limit aşımı nedeniyle oluşabilecek veri kayıplarından {appName} sorumlu tutulamaz."
+                    "<bold>Yükseltme (Upgrade):</bold> Dilediğiniz zaman üst pakete geçiş yapabilir. Mevcut bakiyeniz yeni paketten mahsup edilir.",
+                    "<bold>Düşürme (Downgrade):</bold> Paket düşürme işlemleri dönem sonunda aktifleşir. Dönem ortasında yapılan düşürme taleplerinde ücret iadesi yapılmaz.",
+                    "<bold>Teknik Limit Aşımı:</bold> Limitlerin aşılması durumunda sistem ek kullanım için uyarı verir. Limit aşımı nedeniyle verilerin kaydedilememesinden {appName} sorumlu tutulamaz."
                 ]
             },
             "4": {
@@ -299,6 +308,14 @@
             "8": {
                 "title": "8. Değişiklikler",
                 "content": "Platform yönetimi, işbu kullanım şartlarını dilediği zaman güncelleme hakkını saklı tutar. Önemli değişiklikler kullanıcılara e-posta veya sistem içi bildirimler aracılığıyla duyurulur. Güncel şartlar yayınlandığı andan itibaren yürürlüğe girer."
+            },
+            "9": {
+                "title": "9. İptal ve İade Koşulları",
+                "content": "Abonelik iptali, kontrol paneli üzerinden dilediğiniz an gerçekleştirilebilir.",
+                "items": [
+                    "<bold>İptal İşlemi:</bold> İptal işlemi bir sonraki dönemin yenilenmesini durdurur.",
+                    "<bold>Cayma Hakkı:</bold> Dijital içerik ve anında ifa edilen hizmetlerde hizmetin ifasına başlanmışsa cayma hakkı kısıtlanabilir. Ancak {appName}, ilk kayıt tarihinden itibaren <bold>14 gün</bold> içerisinde, hizmetin teknik olarak kusurlu olması durumunda iade taleplerini değerlendirmeye alır."
+                ]
             }
         }
     },

@@ -255,6 +255,15 @@
             "5": {
                 "title": "5. User Rights",
                 "content": "Users have the right to access, correct, delete (right to be forgotten), and object to data processing activities. You can contact us via <link>support@tukanft.com</link> for these requests."
+            },
+            "6": {
+                "title": "6. Enterprise Data Processing",
+                "content": "Special data security measures are applied for Enterprise plan users.",
+                "items": [
+                    "<bold>Enterprise Data Isolation:</bold> For Enterprise package users, data is hosted in private database schemas isolated from the shared infrastructure.",
+                    "<bold>Private Encryption Keys (BYOK):</bold> Enterprise customers may request the use of encryption keys under their own management for encrypting sensitive data.",
+                    "<bold>Access Control:</bold> Access to enterprise databases is limited to authorized system administrators only, and every access is logged."
+                ]
             }
         }
     },
@@ -273,11 +282,11 @@
             },
             "3": {
                 "title": "3. Subscription Plans and Payment",
-                "content": "The user accepts the technical limits (number of listings, number of users, etc.) of the chosen plan (Individual Lite/Pro, Professional Lite/Pro, Enterprise). Fees are collected at the beginning of the period according to the selected billing period (monthly/yearly).",
+                "content": "The user accepts the technical limits and features of the chosen subscription plan (Individual Lite/Pro, Professional Lite/Pro, Enterprise). Fees are collected at the beginning of the period according to the selected billing period (monthly/yearly).",
                 "items": [
-                    "<bold>Upgrade:</bold> You can switch to a higher plan at any time. Your current balance is deducted from the new plan.",
-                    "<bold>Downgrade:</bold> Plan downgrade operations become active at the end of the period. No refunds are made during the period.",
-                    "<bold>Technical Limit Exceeded:</bold> The system gives a warning if the limits are exceeded. {appName} cannot be held responsible for data losses that may occur due to limit overruns."
+                    "<bold>Upgrade:</bold> You can switch to a higher plan at any time. Your current balance is deducted from the new plan's cost.",
+                    "<bold>Downgrade:</bold> Plan downgrade operations become active at the end of the current billing cycle. No refunds are made for downgrade requests made mid-cycle.",
+                    "<bold>Technical Limit Exceeded:</bold> The system provides a warning for additional usage if limits are exceeded. {appName} cannot be held responsible for data that cannot be saved due to limit overruns."
                 ]
             },
             "4": {
@@ -299,6 +308,14 @@
             "8": {
                 "title": "8. Changes",
                 "content": "Platform management reserves the right to update these terms of use at any time. Important changes are announced to users via email or in-system notifications. Current terms come into force from the moment they are published."
+            },
+            "9": {
+                "title": "9. Cancellation and Refund Policy",
+                "content": "Subscription cancellation can be performed at any time via the control panel.",
+                "items": [
+                    "<bold>Cancellation Process:</bold> The cancellation process stops the renewal for the next period.",
+                    "<bold>Right of Withdrawal:</bold> The right of withdrawal may be restricted for digital content and services where performance has begun immediately. However, {appName} will evaluate refund requests within <bold>14 days</bold> from the initial registration date if the service is technically defective."
+                ]
             }
         }
     },
